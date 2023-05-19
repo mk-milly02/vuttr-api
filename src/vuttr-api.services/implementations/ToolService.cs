@@ -17,7 +17,7 @@ public class ToolService : IToolService
         _mapper = mapper;
     }
 
-    public async Task<bool> DeleteAsync(int id)
+    public async Task<bool> DeleteAsync(int? id)
     {
         return await _repository.DeleteAsync(id);
     }
@@ -36,6 +36,15 @@ public class ToolService : IToolService
         return response;
     }
 
+    public async Task<ToolResponse?> GetByIdAsync(int? id)
+    {
+        ToolResponse? response = new();
+        IEnumerable<Tool> tools = await _repository.RetrieveByConditionAsync(t => t.Id.Equals(id));
+
+        response = _mapper.Map<ToolResponse>(tools.FirstOrDefault());
+        return response;
+    }
+
     public async Task<IEnumerable<ToolResponse>?> GetByTagAsync(string tag)
     {
         List<ToolResponse>? response = new();
@@ -50,13 +59,13 @@ public class ToolService : IToolService
         return response;
     }
 
-    public async Task<ToolResponse> RegisterAsync(CreateToolRequest tool)
+    public async Task<ToolResponse?> RegisterAsync(CreateToolRequest tool)
     {
         Tool nT = _mapper.Map<Tool>(tool);
         await _repository.CreateAsync(nT);
 
         IEnumerable<Tool> added = await _repository.RetrieveByConditionAsync(t => t.Title!.Equals(tool.Title));
-        ToolResponse response = _mapper.Map<ToolResponse>(added.FirstOrDefault());
+        ToolResponse? response = _mapper.Map<ToolResponse>(added.FirstOrDefault());
         return response;
     }
 }
