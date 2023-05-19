@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vuttr-api.infrastructure", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vuttr-api.presentation", "vuttr-api.presentation\vuttr-api.presentation.csproj", "{7EA83229-7F1E-4F6C-A776-184EF470F9FA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vuttr-api.tests", "..\tests\vuttr-api.tests\vuttr-api.tests.csproj", "{577D3C33-EC4D-40BF-B2A0-B86E4B7EC856}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,5 +44,9 @@ Global
 		{7EA83229-7F1E-4F6C-A776-184EF470F9FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7EA83229-7F1E-4F6C-A776-184EF470F9FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7EA83229-7F1E-4F6C-A776-184EF470F9FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{577D3C33-EC4D-40BF-B2A0-B86E4B7EC856}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{577D3C33-EC4D-40BF-B2A0-B86E4B7EC856}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{577D3C33-EC4D-40BF-B2A0-B86E4B7EC856}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{577D3C33-EC4D-40BF-B2A0-B86E4B7EC856}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -42,8 +42,8 @@ public class AuthenticationManager : IAuthenticationManager
 
     public string GenerateSalt()
     {
+        using RandomNumberGenerator generator = RandomNumberGenerator.Create();
         byte[] randomNumberBytes = new byte[32];
-        RandomNumberGenerator generator = RandomNumberGenerator.Create();
         generator.GetBytes(randomNumberBytes);
         return Convert.ToBase64String(randomNumberBytes);
     }
