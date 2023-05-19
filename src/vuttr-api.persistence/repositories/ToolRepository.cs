@@ -2,12 +2,14 @@ using System.Linq.Expressions;
 using Microsoft.Extensions.Configuration;
 using MongoDB.Driver;
 using vuttr_api.domain.entities;
+using vuttr_api.domain.settings;
 
 namespace vuttr_api.persistence.repositories;
 
 public class ToolRepository : IToolRepository
 {
     private readonly IConfiguration _configuration;
+    private readonly MongoDbSettings? _settings;
     private readonly MongoClient _client;
     private readonly IMongoDatabase _database;
     private readonly IMongoCollection<Tool> _collection;
@@ -15,8 +17,10 @@ public class ToolRepository : IToolRepository
     public ToolRepository(IConfiguration configuration)
     {
         _configuration = configuration;
-        _client = new MongoClient(_configuration.GetConnectionString("DefaultConnection"));
-        _database = _client.GetDatabase(_configuration.GetSection("Database").Value);
+        _settings = _configuration.GetSection(nameof(MongoDbSettings)).Get<MongoDbSettings>();
+
+        _client = new MongoClient(_settings!.ConnectionString);
+        _database = _client.GetDatabase(_settings.DatabaseName);
         _collection = _database.GetCollection<Tool>("Tools");
     }
 
@@ -25,7 +29,7 @@ public class ToolRepository : IToolRepository
         await _collection.InsertOneAsync(tool);
     }
 
-    public async Task<bool> DeleteAsync(int id)
+    public async Task<bool> DeleteAsync(int? id)
     {
         DeleteResult result = await _collection.DeleteOneAsync(tool => tool.Id.Equals(id));
         return result.IsAcknowledged;
