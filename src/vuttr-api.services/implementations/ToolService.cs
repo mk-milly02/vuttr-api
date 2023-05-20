@@ -17,15 +17,17 @@ public class ToolService : IToolService
         _mapper = mapper;
     }
 
-    public async Task<bool> DeleteAsync(int? id)
+    public async Task<bool?> DeleteAsync(int id)
     {
         return await _repository.DeleteAsync(id);
     }
 
-    public async Task<IEnumerable<ToolResponse>> GetAllAsync()
+    public async Task<IEnumerable<ToolResponse>?> GetAllAsync()
     {
         List<ToolResponse> response = new();
         IEnumerable<Tool>? tools = await _repository.RetrieveAllAsync();
+
+        if (tools is null) return null;
 
         foreach (Tool tool in tools)
         {
@@ -36,19 +38,20 @@ public class ToolService : IToolService
         return response;
     }
 
-    public async Task<ToolResponse?> GetByIdAsync(int? id)
+    public async Task<ToolResponse?> GetByIdAsync(int id)
     {
         ToolResponse? response = new();
-        IEnumerable<Tool> tools = await _repository.RetrieveByConditionAsync(t => t.Id.Equals(id));
+        Tool? tool = await _repository.RetrieveByConditionAsync(t => t.Id.Equals(id));
 
-        response = _mapper.Map<ToolResponse>(tools.FirstOrDefault());
-        return response;
+        return tool is null ? null : _mapper.Map<ToolResponse>(tool);
     }
 
     public async Task<IEnumerable<ToolResponse>?> GetByTagAsync(string tag)
     {
         List<ToolResponse>? response = new();
-        IEnumerable<Tool>? tools = await _repository.RetrieveByConditionAsync(t => t.Tags!.Contains(tag));
+        IEnumerable<Tool>? tools = await _repository.RetrieveAllByConditionAsync(t => t.Tags!.Contains(tag));
+
+        if (tools is null) return null;
 
         foreach (Tool tool in tools)
         {
@@ -61,11 +64,15 @@ public class ToolService : IToolService
 
     public async Task<ToolResponse?> RegisterAsync(CreateToolRequest tool)
     {
+        Tool? existing = await _repository.RetrieveByConditionAsync(t => t.Title!.Equals(tool.Title));
+
+        if (existing is not null) return null;
+
         Tool nT = _mapper.Map<Tool>(tool);
         await _repository.CreateAsync(nT);
 
-        IEnumerable<Tool> added = await _repository.RetrieveByConditionAsync(t => t.Title!.Equals(tool.Title));
-        ToolResponse? response = _mapper.Map<ToolResponse>(added.FirstOrDefault());
-        return response;
+        Tool? added = await _repository.RetrieveByConditionAsync(t => t.Title!.Equals(tool.Title));
+
+        return _mapper.Map<ToolResponse>(added);
     }
 }

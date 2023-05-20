@@ -10,6 +10,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
     <PackageReference Include="coverlet.msbuild" Version="3.2.0">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
@@ -25,6 +27,13 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\vuttr-api.persistence\vuttr-api.persistence.csproj" />
+    <ProjectReference Include="..\..\src\vuttr-api.infrastructure\vuttr-api.infrastructure.csproj" />
+    <ProjectReference Include="..\..\src\vuttr-api.services\vuttr-api.services.csproj" />
+    <ProjectReference Include="..\..\src\vuttr-api.domain\vuttr-api.domain.csproj" />
   </ItemGroup>
 
 </Project>

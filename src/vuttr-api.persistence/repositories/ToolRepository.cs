@@ -29,21 +29,28 @@ public class ToolRepository : IToolRepository
         await _collection.InsertOneAsync(tool);
     }
 
-    public async Task<bool> DeleteAsync(int? id)
+    public async Task<bool?> DeleteAsync(int id)
     {
-        DeleteResult result = await _collection.DeleteOneAsync(tool => tool.Id.Equals(id));
-        return result.IsAcknowledged;
+        Tool? result = await _collection.FindOneAndDeleteAsync(tool => tool.Id.Equals(id));
+        return result is not null;
     }
 
-    public async Task<IEnumerable<Tool>> RetrieveAllAsync()
+    public async Task<IEnumerable<Tool>?> RetrieveAllAsync()
     {
         IAsyncCursor<Tool> tools = await _collection.FindAsync(_ => true);
-        return await tools.ToListAsync();
+        return await tools.AnyAsync() ? tools.ToEnumerable() : null;
     }
 
-    public async Task<IEnumerable<Tool>> RetrieveByConditionAsync(Expression<Func<Tool, bool>> expression)
+    public async Task<IEnumerable<Tool>?> RetrieveAllByConditionAsync(Expression<Func<Tool, bool>> expression)
     {
         IAsyncCursor<Tool> tools = await _collection.FindAsync(expression);
-        return await tools.ToListAsync();
+        return !await tools.AnyAsync() ? null : tools.ToEnumerable();
+    }
+
+    public async Task<Tool?> RetrieveByConditionAsync(Expression<Func<Tool, bool>> expression)
+    {
+        IAsyncCursor<Tool> tools = await _collection.FindAsync(expression);
+
+        return !await tools.AnyAsync() ? null : tools.FirstOrDefault();
     }
 }
