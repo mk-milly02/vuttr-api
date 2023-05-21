@@ -34,6 +34,7 @@
     <ProjectReference Include="..\..\src\vuttr-api.infrastructure\vuttr-api.infrastructure.csproj" />
     <ProjectReference Include="..\..\src\vuttr-api.services\vuttr-api.services.csproj" />
     <ProjectReference Include="..\..\src\vuttr-api.domain\vuttr-api.domain.csproj" />
+    <ProjectReference Include="..\..\src\vuttr-api.presentation\vuttr-api.presentation.csproj" />
   </ItemGroup>
 
 </Project>

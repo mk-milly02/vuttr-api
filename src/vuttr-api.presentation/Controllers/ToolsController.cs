@@ -19,29 +19,31 @@ public class ToolsController : ControllerBase
 
     [HttpGet]
     [ProducesResponseType(200, Type = typeof(IEnumerable<ToolResponse>))]
-    public async Task<IEnumerable<ToolResponse>> GetAllToolsAsync()
+    public async Task<IActionResult> GetAllToolsAsync()
     {
-        return await _toolService.GetAllAsync();
+        return Ok(await _toolService.GetAllAsync());
     }
 
     [HttpGet("{id}")]
     [ProducesResponseType(200, Type = typeof(ToolResponse))]
     [ProducesResponseType(400)]
-    public async Task<IActionResult> GetToolByIdAsync(int? id)
+    [ProducesResponseType(404)]
+    public async Task<IActionResult> GetToolByIdAsync(int id)
     {
-        if (id is null) return BadRequest();
+        if (id <= 0) return BadRequest("Invalid tool id");
         ToolResponse? tool = await _toolService.GetByIdAsync(id);
-        return Ok(tool);
+        return tool is null ? NotFound($"Tool {id} could not be found") : Ok(tool);
     }
 
     [HttpGet("{tag}")]
     [ProducesResponseType(200, Type = typeof(IEnumerable<ToolResponse>))]
     [ProducesResponseType(400)]
+    [ProducesResponseType(404)]
     public async Task<IActionResult> GetToolsByTagAsync(string? tag)
     {
-        if (tag is null) return BadRequest();
+        if (tag is null) return BadRequest("Invalid tool tag");
         IEnumerable<ToolResponse>? tools = await _toolService.GetByTagAsync(tag);
-        return Ok(tools);
+        return tools is null ? NotFound($"There is no tool with the tag '{tag}'") : Ok(tools);
     }
 
     [HttpPost]
@@ -49,21 +51,25 @@ public class ToolsController : ControllerBase
     [ProducesResponseType(400)]
     public async Task<IActionResult> CreateToolAsync([FromBody] CreateToolRequest newTool)
     {
-        if (newTool is null) return BadRequest();
+        if (!ModelState.IsValid) return BadRequest(ModelState);
+
         ToolResponse? added = await _toolService.RegisterAsync(newTool);
-        return added == null ? BadRequest("Repository failed to create customer.") : CreatedAtAction("GetToolByIdAsync", added.Id, added);
+        return added is null
+                ? BadRequest("Tool already exists")
+                : CreatedAtAction("GetToolByIdAsync", added.Id, added);
     }
 
     [HttpDelete("{id}")]
     [ProducesResponseType(204)]
     [ProducesResponseType(400)]
     [ProducesResponseType(404)]
-    public async Task<IActionResult> Delete(int? id)
+    public async Task<IActionResult> DeleteToolAsync(int id)
     {
-        if (id is null) return BadRequest();
+        if (id <= 0) return BadRequest("Invalid tool id");
+
         ToolResponse? existing = await _toolService.GetByIdAsync(id);
 
-        if (existing == null) return NotFound();
+        if (existing is null) return NotFound($"Tool {id} does not exist");
 
         bool? deleted = await _toolService.DeleteAsync(id);
 

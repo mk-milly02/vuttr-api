@@ -64,18 +64,18 @@ FNF:1
 FNH:0
 end_of_record
 SF:c:\Users\jonas\OneDrive\Desktop\Programming\C#\Projects\vuttr-api\src\vuttr-api.domain\dtos\CreateToolRequest.cs
-FN:4,System.String vuttr_api.domain.dtos.CreateToolRequest::get_Title()
-FNDA:3,System.String vuttr_api.domain.dtos.CreateToolRequest::get_Title()
-DA:5,3
-FN:5,System.String vuttr_api.domain.dtos.CreateToolRequest::get_Link()
-FNDA:3,System.String vuttr_api.domain.dtos.CreateToolRequest::get_Link()
-DA:6,3
-FN:6,System.String vuttr_api.domain.dtos.CreateToolRequest::get_Description()
-FNDA:3,System.String vuttr_api.domain.dtos.CreateToolRequest::get_Description()
-DA:7,3
-FN:7,System.Collections.Generic.List`1<System.String> vuttr_api.domain.dtos.CreateToolRequest::get_Tags()
-FNDA:3,System.Collections.Generic.List`1<System.String> vuttr_api.domain.dtos.CreateToolRequest::get_Tags()
-DA:8,3
+FN:7,System.String vuttr_api.domain.dtos.CreateToolRequest::get_Title()
+FNDA:5,System.String vuttr_api.domain.dtos.CreateToolRequest::get_Title()
+DA:8,5
+FN:11,System.String vuttr_api.domain.dtos.CreateToolRequest::get_Link()
+FNDA:6,System.String vuttr_api.domain.dtos.CreateToolRequest::get_Link()
+DA:12,6
+FN:14,System.String vuttr_api.domain.dtos.CreateToolRequest::get_Description()
+FNDA:6,System.String vuttr_api.domain.dtos.CreateToolRequest::get_Description()
+DA:15,6
+FN:17,System.Collections.Generic.List`1<System.String> vuttr_api.domain.dtos.CreateToolRequest::get_Tags()
+FNDA:6,System.Collections.Generic.List`1<System.String> vuttr_api.domain.dtos.CreateToolRequest::get_Tags()
+DA:18,6
 LF:4
 LH:4
 BRF:0
@@ -85,20 +85,20 @@ FNH:4
 end_of_record
 SF:c:\Users\jonas\OneDrive\Desktop\Programming\C#\Projects\vuttr-api\src\vuttr-api.domain\dtos\ToolResponse.cs
 FN:4,System.Int32 vuttr_api.domain.dtos.ToolResponse::get_Id()
-FNDA:14,System.Int32 vuttr_api.domain.dtos.ToolResponse::get_Id()
-DA:5,14
+FNDA:57,System.Int32 vuttr_api.domain.dtos.ToolResponse::get_Id()
+DA:5,57
 FN:5,System.String vuttr_api.domain.dtos.ToolResponse::get_Title()
-FNDA:12,System.String vuttr_api.domain.dtos.ToolResponse::get_Title()
-DA:6,12
+FNDA:40,System.String vuttr_api.domain.dtos.ToolResponse::get_Title()
+DA:6,40
 FN:6,System.String vuttr_api.domain.dtos.ToolResponse::get_Link()
-FNDA:12,System.String vuttr_api.domain.dtos.ToolResponse::get_Link()
-DA:7,12
+FNDA:38,System.String vuttr_api.domain.dtos.ToolResponse::get_Link()
+DA:7,38
 FN:7,System.String vuttr_api.domain.dtos.ToolResponse::get_Description()
-FNDA:12,System.String vuttr_api.domain.dtos.ToolResponse::get_Description()
-DA:8,12
+FNDA:38,System.String vuttr_api.domain.dtos.ToolResponse::get_Description()
+DA:8,38
 FN:8,System.Collections.Generic.List`1<System.String> vuttr_api.domain.dtos.ToolResponse::get_Tags()
-FNDA:16,System.Collections.Generic.List`1<System.String> vuttr_api.domain.dtos.ToolResponse::get_Tags()
-DA:9,16
+FNDA:49,System.Collections.Generic.List`1<System.String> vuttr_api.domain.dtos.ToolResponse::get_Tags()
+DA:9,49
 LF:5
 LH:5
 BRF:0
@@ -276,6 +276,148 @@ LH:0
 BRF:6
 BRH:0
 FNF:6
+FNH:0
+end_of_record
+SF:c:\Users\jonas\OneDrive\Desktop\Programming\C#\Projects\vuttr-api\src\vuttr-api.presentation\Program.cs
+FN:3,System.Void Program::<Main>$(System.String[])
+FNDA:0,System.Void Program::<Main>$(System.String[])
+DA:4,0
+DA:8,0
+DA:9,0
+DA:10,0
+DA:11,0
+DA:13,0
+DA:15,0
+DA:16,0
+DA:18,0
+DA:21,0
+DA:22,0
+DA:23,0
+DA:24,0
+DA:25,0
+DA:27,0
+DA:29,0
+DA:31,0
+DA:33,0
+BRDA:21,154,0,0
+BRDA:21,154,1,0
+LF:18
+LH:0
+BRF:2
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:c:\Users\jonas\OneDrive\Desktop\Programming\C#\Projects\vuttr-api\src\vuttr-api.presentation\Controllers\ToolsController.cs
+FN:14,System.Void vuttr_api.presentation.controllers.ToolsController::.ctor(vuttr_api.services.contracts.IToolService)
+FNDA:15,System.Void vuttr_api.presentation.controllers.ToolsController::.ctor(vuttr_api.services.contracts.IToolService)
+DA:15,15
+DA:16,15
+DA:17,15
+DA:18,15
+FN:52,System.Void vuttr_api.presentation.controllers.ToolsController/<CreateToolAsync>d__5::MoveNext()
+FNDA:3,System.Void vuttr_api.presentation.controllers.ToolsController/<CreateToolAsync>d__5::MoveNext()
+DA:53,3
+DA:54,4
+DA:56,2
+DA:57,2
+DA:58,2
+DA:59,2
+DA:60,3
+BRDA:54,39,0,1
+BRDA:54,39,1,2
+BRDA:57,212,0,1
+BRDA:57,212,1,1
+FN:66,System.Void vuttr_api.presentation.controllers.ToolsController/<DeleteToolAsync>d__6::MoveNext()
+FNDA:4,System.Void vuttr_api.presentation.controllers.ToolsController/<DeleteToolAsync>d__6::MoveNext()
+DA:67,4
+DA:68,5
+DA:70,3
+DA:72,4
+DA:74,2
+DA:76,2
+DA:77,2
+DA:78,2
+DA:79,4
+BRDA:68,40,0,1
+BRDA:68,40,1,3
+BRDA:72,214,0,1
+BRDA:72,214,1,2
+BRDA:76,446,0,2
+BRDA:76,446,1,1
+BRDA:76,459,0,1
+BRDA:76,459,1,1
+FN:22,System.Void vuttr_api.presentation.controllers.ToolsController/<GetAllToolsAsync>d__2::MoveNext()
+FNDA:2,System.Void vuttr_api.presentation.controllers.ToolsController/<GetAllToolsAsync>d__2::MoveNext()
+DA:23,2
+DA:24,2
+DA:25,2
+FN:31,System.Void vuttr_api.presentation.controllers.ToolsController/<GetToolByIdAsync>d__3::MoveNext()
+FNDA:3,System.Void vuttr_api.presentation.controllers.ToolsController/<GetToolByIdAsync>d__3::MoveNext()
+DA:32,3
+DA:33,4
+DA:34,2
+DA:35,2
+DA:36,3
+BRDA:33,29,0,1
+BRDA:33,29,1,2
+BRDA:35,196,0,1
+BRDA:35,196,1,1
+FN:42,System.Void vuttr_api.presentation.controllers.ToolsController/<GetToolsByTagAsync>d__4::MoveNext()
+FNDA:3,System.Void vuttr_api.presentation.controllers.ToolsController/<GetToolsByTagAsync>d__4::MoveNext()
+DA:43,3
+DA:44,4
+DA:45,2
+DA:46,2
+DA:47,3
+BRDA:44,26,0,1
+BRDA:44,26,1,2
+BRDA:46,193,0,1
+BRDA:46,193,1,1
+LF:33
+LH:33
+BRF:20
+BRH:20
+FNF:6
+FNH:6
+end_of_record
+SF:c:\Users\jonas\OneDrive\Desktop\Programming\C#\Projects\vuttr-api\src\vuttr-api.presentation\Controllers\UsersController.cs
+FN:12,System.Void vuttr_api.presentation.controllers.UsersController::.ctor(vuttr_api.services.contracts.IUserService)
+FNDA:0,System.Void vuttr_api.presentation.controllers.UsersController::.ctor(vuttr_api.services.contracts.IUserService)
+DA:13,0
+DA:14,0
+DA:15,0
+DA:16,0
+FN:35,System.Void vuttr_api.presentation.controllers.UsersController/<Authenticate>d__3::MoveNext()
+FNDA:0,System.Void vuttr_api.presentation.controllers.UsersController/<Authenticate>d__3::MoveNext()
+DA:36,0
+DA:37,0
+DA:39,0
+DA:41,0
+DA:42,0
+BRDA:37,26,0,0
+BRDA:37,26,1,0
+BRDA:41,239,0,0
+BRDA:41,239,1,0
+FN:21,System.Void vuttr_api.presentation.controllers.UsersController/<Resigter>d__2::MoveNext()
+FNDA:0,System.Void vuttr_api.presentation.controllers.UsersController/<Resigter>d__2::MoveNext()
+DA:22,0
+DA:23,0
+DA:25,0
+DA:27,0
+DA:29,0
+DA:30,0
+BRDA:23,37,0,0
+BRDA:23,37,1,0
+BRDA:25,185,0,0
+BRDA:25,185,1,0
+BRDA:29,355,0,0
+BRDA:29,355,1,0
+LF:15
+LH:0
+BRF:10
+BRH:0
+FNF:3
 FNH:0
 end_of_record
 SF:c:\Users\jonas\OneDrive\Desktop\Programming\C#\Projects\vuttr-api\src\vuttr-api.services\implementations\AuthenticationManager.cs
