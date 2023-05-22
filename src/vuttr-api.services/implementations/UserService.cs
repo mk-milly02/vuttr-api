@@ -31,7 +31,7 @@ public class UserService : IUserService
     {
         User? existing = await _userManager.FindByNameAsync(authenticateUser.Username!);
 
-        if (existing is null) return (null, DateTime.UtcNow);
+        if (existing is null) return (null, DateTime.MinValue);
 
         string saltedPassword = _authenticationManager.Combine(authenticateUser.Password!, existing!.PasswordSalt!);
         return await _authenticationManager.ValidateUserAsync(existing.Email!, saltedPassword);
