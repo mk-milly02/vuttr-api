@@ -17,14 +17,14 @@ public class ToolsController : ControllerBase
         _toolService = toolService;
     }
 
-    [HttpGet]
+    [HttpGet(Name = "GetAll")]
     [ProducesResponseType(200, Type = typeof(IEnumerable<ToolResponse>))]
     public async Task<IActionResult> GetAllToolsAsync()
     {
         return Ok(await _toolService.GetAllAsync());
     }
 
-    [HttpGet("{id}")]
+    [HttpGet("{id}", Name = "GetById")]
     [ProducesResponseType(200, Type = typeof(ToolResponse))]
     [ProducesResponseType(400)]
     [ProducesResponseType(404)]
@@ -35,7 +35,7 @@ public class ToolsController : ControllerBase
         return tool is null ? NotFound($"Tool {id} could not be found") : Ok(tool);
     }
 
-    [HttpGet("{tag}")]
+    [HttpGet("{tag}", Name = "GetByTag")]
     [ProducesResponseType(200, Type = typeof(IEnumerable<ToolResponse>))]
     [ProducesResponseType(400)]
     [ProducesResponseType(404)]
@@ -46,7 +46,7 @@ public class ToolsController : ControllerBase
         return tools is null ? NotFound($"There is no tool with the tag '{tag}'") : Ok(tools);
     }
 
-    [HttpPost]
+    [HttpPost(Name = "Create")]
     [ProducesResponseType(201, Type = typeof(ToolResponse))]
     [ProducesResponseType(400)]
     public async Task<IActionResult> CreateToolAsync([FromBody] CreateToolRequest newTool)
@@ -59,7 +59,7 @@ public class ToolsController : ControllerBase
                 : CreatedAtAction("GetToolByIdAsync", added.Id, added);
     }
 
-    [HttpDelete("{id}")]
+    [HttpDelete("{id}", Name = "Delete")]
     [ProducesResponseType(204)]
     [ProducesResponseType(400)]
     [ProducesResponseType(404)]
