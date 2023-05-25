@@ -6,7 +6,8 @@ public interface IToolService
 {
     Task<IEnumerable<ToolResponse>?> GetAllAsync();
     Task<IEnumerable<ToolResponse>?> GetByTagAsync(string tag);
-    Task<ToolResponse?> GetByIdAsync(int id);
-    Task<ToolResponse?> RegisterAsync(CreateToolRequest tool);
-    Task<bool?> DeleteAsync(int id);
+    Task<ToolResponse?> GetByIdAsync(Guid id);
+    Task<ToolResponse?> GetByTitleAsync(string title);
+    Task<bool> RegisterAsync(CreateToolRequest tool);
+    Task<bool?> DeleteAsync(Guid id);
 }

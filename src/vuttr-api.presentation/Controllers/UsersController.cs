@@ -15,10 +15,10 @@ public class UsersController : ControllerBase
         _userService = userService;
     }
 
-    [HttpPost]
+    [HttpPost("register")]
     [ProducesResponseType(200, Type = typeof(UserResponse))]
     [ProducesResponseType(400)]
-    public async Task<IActionResult> Resigter([FromBody] UserForRegisteration user)
+    public async Task<IActionResult> Register([FromBody] UserForRegisteration user)
     {
         if (!ModelState.IsValid) return BadRequest(ModelState);
 
@@ -29,7 +29,7 @@ public class UsersController : ControllerBase
         return added is null ? BadRequest("Repository failed to create user.") : Ok(added);
     }
 
-    [HttpPost]
+    [HttpPost("authenticate")]
     [ProducesResponseType(200)]
     [ProducesResponseType(400)]
     [ProducesResponseType(401)]

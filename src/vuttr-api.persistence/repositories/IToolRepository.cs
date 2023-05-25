@@ -9,5 +9,5 @@ public interface IToolRepository
     Task<IEnumerable<Tool>?> RetrieveAllByConditionAsync(Expression<Func<Tool, bool>> expression);
     Task<Tool?> RetrieveByConditionAsync(Expression<Func<Tool, bool>> expression);
     Task CreateAsync(Tool tool);
-    Task<bool?> DeleteAsync(int id);
+    Task<bool?> DeleteAsync(Guid id);
 }

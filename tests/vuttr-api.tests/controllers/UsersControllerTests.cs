@@ -30,7 +30,7 @@ public class UsersControllerTests
         _controller.ModelState.AddModelError("Username", "Username is required");
 
         // When
-        IActionResult result = await _controller.Resigter(user);
+        IActionResult result = await _controller.Register(user);
 
         // Then
         Assert.NotNull(result);
@@ -56,7 +56,7 @@ public class UsersControllerTests
         _controller = new(_mockUserService.Object);
 
         // When
-        IActionResult result = await _controller.Resigter(user);
+        IActionResult result = await _controller.Register(user);
 
         // Then
         _mockUserService.Verify(mus => mus.AlreadyExistsAsync(user), Times.Once);
@@ -83,7 +83,7 @@ public class UsersControllerTests
         _controller = new(_mockUserService.Object);
 
         // When
-        IActionResult result = await _controller.Resigter(user);
+        IActionResult result = await _controller.Register(user);
 
         // Then
         _mockUserService.Verify(mus => mus.AlreadyExistsAsync(user), Times.Once);
@@ -116,7 +116,7 @@ public class UsersControllerTests
         _controller = new(_mockUserService.Object);
 
         // When
-        IActionResult result = await _controller.Resigter(user);
+        IActionResult result = await _controller.Register(user);
 
         // Then
         _mockUserService.Verify(mus => mus.AlreadyExistsAsync(user), Times.Once);

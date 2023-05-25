@@ -21,7 +21,7 @@ public class ToolRepository : IToolRepository
 
         _client = new MongoClient(_settings!.ConnectionString);
         _database = _client.GetDatabase(_settings.DatabaseName);
-        _collection = _database.GetCollection<Tool>("Tools");
+        _collection = _database.GetCollection<Tool>("tools");
     }
 
     public async Task CreateAsync(Tool tool)
@@ -29,7 +29,7 @@ public class ToolRepository : IToolRepository
         await _collection.InsertOneAsync(tool);
     }
 
-    public async Task<bool?> DeleteAsync(int id)
+    public async Task<bool?> DeleteAsync(Guid id)
     {
         Tool? result = await _collection.FindOneAndDeleteAsync(tool => tool.Id.Equals(id));
         return result is not null;
@@ -51,6 +51,6 @@ public class ToolRepository : IToolRepository
     {
         IAsyncCursor<Tool> tools = await _collection.FindAsync(expression);
 
-        return !await tools.AnyAsync() ? null : tools.FirstOrDefault();
+        return await tools.FirstOrDefaultAsync();
     }
 }

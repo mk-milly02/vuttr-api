@@ -17,7 +17,7 @@ public class ToolService : IToolService
         _mapper = mapper;
     }
 
-    public async Task<bool?> DeleteAsync(int id)
+    public async Task<bool?> DeleteAsync(Guid id)
     {
         return await _repository.DeleteAsync(id);
     }
@@ -38,7 +38,7 @@ public class ToolService : IToolService
         return response;
     }
 
-    public async Task<ToolResponse?> GetByIdAsync(int id)
+    public async Task<ToolResponse?> GetByIdAsync(Guid id)
     {
         ToolResponse? response = new();
         Tool? tool = await _repository.RetrieveByConditionAsync(t => t.Id.Equals(id));
@@ -62,17 +62,24 @@ public class ToolService : IToolService
         return response;
     }
 
-    public async Task<ToolResponse?> RegisterAsync(CreateToolRequest tool)
+    public async Task<ToolResponse?> GetByTitleAsync(string title)
+    {
+        Tool? tool = await _repository.RetrieveByConditionAsync(t => t.Title!.Contains(title));
+
+        if (tool is null) return null;
+
+        return _mapper.Map<ToolResponse>(tool);
+    }
+
+    public async Task<bool> RegisterAsync(CreateToolRequest tool)
     {
         Tool? existing = await _repository.RetrieveByConditionAsync(t => t.Title!.Equals(tool.Title));
 
-        if (existing is not null) return null;
+        if (existing is not null) return false;
 
         Tool nT = _mapper.Map<Tool>(tool);
         await _repository.CreateAsync(nT);
 
-        Tool? added = await _repository.RetrieveByConditionAsync(t => t.Title!.Equals(tool.Title));
-
-        return _mapper.Map<ToolResponse>(added);
+        return true;
     }
 }
