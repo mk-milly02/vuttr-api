@@ -6,8 +6,8 @@ namespace vuttr_api.domain.entities;
 public class Tool
 {
     [BsonId]
-    [BsonRepresentation(BsonType.Int32)]
-    public int Id { get; set; }
+    [BsonRepresentation(BsonType.ObjectId)]
+    public Guid Id { get; set; }
     public string? Title { get; set; }
     public string? Link { get; set; }
     public string? Description { get; set; }
