@@ -9,6 +9,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vuttr-api.domain", "src\vut
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vuttr-api.persistence", "src\vuttr-api.persistence\vuttr-api.persistence.csproj", "{145AF7C0-D683-4D3C-A363-CF3EF0F006DC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vuttr-api.infrastructure", "src\vuttr-api.infrastructure\vuttr-api.infrastructure.csproj", "{C5A66539-30CD-4747-A0D5-317FE22E29F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vuttr-api.services", "src\vuttr-api.services\vuttr-api.services.csproj", "{552D511B-0C41-4930-9C77-A287BF6B1B30}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vuttr-api.presentation", "src\vuttr-api.presentation\vuttr-api.presentation.csproj", "{34928D5D-7ED6-4287-9851-36E508FBF09E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,9 +32,24 @@ Global
 		{145AF7C0-D683-4D3C-A363-CF3EF0F006DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{145AF7C0-D683-4D3C-A363-CF3EF0F006DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{145AF7C0-D683-4D3C-A363-CF3EF0F006DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5A66539-30CD-4747-A0D5-317FE22E29F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5A66539-30CD-4747-A0D5-317FE22E29F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5A66539-30CD-4747-A0D5-317FE22E29F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5A66539-30CD-4747-A0D5-317FE22E29F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{552D511B-0C41-4930-9C77-A287BF6B1B30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{552D511B-0C41-4930-9C77-A287BF6B1B30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{552D511B-0C41-4930-9C77-A287BF6B1B30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{552D511B-0C41-4930-9C77-A287BF6B1B30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34928D5D-7ED6-4287-9851-36E508FBF09E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34928D5D-7ED6-4287-9851-36E508FBF09E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34928D5D-7ED6-4287-9851-36E508FBF09E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34928D5D-7ED6-4287-9851-36E508FBF09E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{297DB794-E9B2-477C-B43D-7528D012CF97} = {6828E982-907F-4C36-9614-3B84918CD006}
 		{145AF7C0-D683-4D3C-A363-CF3EF0F006DC} = {6828E982-907F-4C36-9614-3B84918CD006}
+		{C5A66539-30CD-4747-A0D5-317FE22E29F0} = {6828E982-907F-4C36-9614-3B84918CD006}
+		{552D511B-0C41-4930-9C77-A287BF6B1B30} = {6828E982-907F-4C36-9614-3B84918CD006}
+		{34928D5D-7ED6-4287-9851-36E508FBF09E} = {6828E982-907F-4C36-9614-3B84918CD006}
 	EndGlobalSection
 EndGlobal
