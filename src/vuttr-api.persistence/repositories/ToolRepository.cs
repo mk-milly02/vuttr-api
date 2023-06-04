@@ -45,6 +45,11 @@ public class ToolRepository : IToolRepository
         return _tools.Include(x => x.Tags).AsNoTracking().Where(x => x.Tags!.Select(x => x.Name).ToList().Contains(tag));
     }
 
+    public Tool? RetrieveByTitle(string title)
+    {
+        return _tools.Include(x => x.Tags).AsNoTracking().SingleOrDefault(x => x.Title!.Equals(title));
+    }
+
     public async Task<Tool?> UpdateAsync(Tool tool)
     {
         EntityEntry<Tool> updated = _tools.Update(tool);

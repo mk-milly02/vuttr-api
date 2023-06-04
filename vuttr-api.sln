@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vuttr-api.services", "src\v
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vuttr-api.presentation", "src\vuttr-api.presentation\vuttr-api.presentation.csproj", "{34928D5D-7ED6-4287-9851-36E508FBF09E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{1E89B485-A95F-43F7-9096-2C11CBA2C3CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vuttr-api.tests", "tests\vuttr-api.tests\vuttr-api.tests.csproj", "{6201E239-46AE-4CF4-BA1F-A3D7B757332D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,6 +48,10 @@ Global
 		{34928D5D-7ED6-4287-9851-36E508FBF09E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{34928D5D-7ED6-4287-9851-36E508FBF09E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{34928D5D-7ED6-4287-9851-36E508FBF09E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6201E239-46AE-4CF4-BA1F-A3D7B757332D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6201E239-46AE-4CF4-BA1F-A3D7B757332D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6201E239-46AE-4CF4-BA1F-A3D7B757332D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6201E239-46AE-4CF4-BA1F-A3D7B757332D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{297DB794-E9B2-477C-B43D-7528D012CF97} = {6828E982-907F-4C36-9614-3B84918CD006}
@@ -51,5 +59,6 @@ Global
 		{C5A66539-30CD-4747-A0D5-317FE22E29F0} = {6828E982-907F-4C36-9614-3B84918CD006}
 		{552D511B-0C41-4930-9C77-A287BF6B1B30} = {6828E982-907F-4C36-9614-3B84918CD006}
 		{34928D5D-7ED6-4287-9851-36E508FBF09E} = {6828E982-907F-4C36-9614-3B84918CD006}
+		{6201E239-46AE-4CF4-BA1F-A3D7B757332D} = {1E89B485-A95F-43F7-9096-2C11CBA2C3CE}
 	EndGlobalSection
 EndGlobal

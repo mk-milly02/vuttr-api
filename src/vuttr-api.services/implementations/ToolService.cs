@@ -35,6 +35,12 @@ public class ToolService : IToolService
         return tool is null ? null : _mapper.Map<ToolViewModel>(tool);
     }
 
+    public ToolViewModel? GetToolByTitle(string title)
+    {
+        Tool? tool = _repository.RetrieveByTitle(title);
+        return tool is null ? null : _mapper.Map<ToolViewModel>(tool);
+    }
+
     public async Task<IEnumerable<ToolViewModel>?> GetToolsAsync()
     {
         List<ToolViewModel> output = new();

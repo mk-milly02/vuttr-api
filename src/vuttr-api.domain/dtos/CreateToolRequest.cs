@@ -17,6 +17,6 @@ public class CreateToolRequest
     [MaxLength(2000, ErrorMessage = "Description is too long")]
     public string? Description { get; set; }
 
-    [MinLength(1, ErrorMessage = "A tool should have at least on tag")]
+    [MinLength(1, ErrorMessage = "A tool should have at least one tag")]
     public List<string>? Tags { get; set; }
 }

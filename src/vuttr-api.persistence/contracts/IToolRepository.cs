@@ -7,6 +7,7 @@ public interface IToolRepository
     Task<Tool?> CreateAsync(Tool tool);
     Task<IEnumerable<Tool>?> RetrieveAllAsync();
     Tool? RetrieveById(int id);
+    Tool? RetrieveByTitle(string title);
     IEnumerable<Tool>? RetrieveByTag(string tag);
     Task<Tool?> UpdateAsync(Tool tool);
     Task<bool?> DeleteAsync(int id);
