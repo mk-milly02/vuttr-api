@@ -46,7 +46,8 @@ public class ToolRepository : IToolRepository
     {
         return _tools.Include(x => x.Tags)
                      .AsNoTracking()
-                     .Where(x => x.Tags!.Contains(new() { Name = tag }));
+                     .Where(x => x.Tags!.Any(x => x.Name!.Equals(tag)))
+                     .AsEnumerable();
     }
 
     public Tool? RetrieveByTitle(string title)
