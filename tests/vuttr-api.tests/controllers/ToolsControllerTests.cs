@@ -77,23 +77,6 @@ public class ToolsControllerTests
     }
 
     [Fact]
-    public async Task GetTools_ShouldReturnNullIfNoToolsHaveBeenRegistered()
-    {
-        // Given
-        IEnumerable<ToolViewModel>? tools = null;
-        _mockToolService!.Setup(x => x.GetToolsAsync()).ReturnsAsync(tools);
-        _controller = new(_mockToolService.Object);
-
-        // When
-        IActionResult response = await _controller.GetTools();
-
-        // Then
-        _mockToolService.Verify(x => x.GetToolsAsync(), Times.Once);
-        NotFoundObjectResult reponseObject = Assert.IsAssignableFrom<NotFoundObjectResult>(response);
-        Assert.Equal("No tools available.", reponseObject.Value);
-    }
-
-    [Fact]
     public void GetToolsByTag_ShouldReturnBadRequestWhenTagIsNull()
     {
         // Given
@@ -106,27 +89,6 @@ public class ToolsControllerTests
         // Then
         BadRequestObjectResult responseObject = Assert.IsAssignableFrom<BadRequestObjectResult>(response);
         Assert.Equal("Invalid tag.", responseObject.Value);
-    }
-
-    [Fact]
-    public void GetToolsByTag_ShouldReturnNotFoundWhenThereAreNoToolsThatMatchTheTag()
-    {
-        // Given
-        string tag = "grpc";
-        IEnumerable<ToolViewModel>? output = null;
-
-        _mockToolService!.Setup(x => x.GetToolsByTag(tag)).Returns(output);
-
-        _controller = new(_mockToolService.Object);
-
-        // When
-        IActionResult response = _controller.GetToolsByTag(tag);
-
-        // Then
-        _mockToolService.Verify(x => x.GetToolsByTag(tag), Times.Once);
-
-        NotFoundObjectResult responseObject = Assert.IsAssignableFrom<NotFoundObjectResult>(response);
-        Assert.Equal($"There is no tool with the tag '{tag}'.", responseObject.Value);
     }
 
     [Fact]

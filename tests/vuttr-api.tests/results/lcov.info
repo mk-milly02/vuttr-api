@@ -34,162 +34,162 @@ FN:5,System.Int32 vuttr_api.domain.entities.Tag::get_ToolId()
 FNDA:0,System.Int32 vuttr_api.domain.entities.Tag::get_ToolId()
 DA:6,0
 FN:6,System.String vuttr_api.domain.entities.Tag::get_Name()
-FNDA:14,System.String vuttr_api.domain.entities.Tag::get_Name()
-DA:7,14
+FNDA:0,System.String vuttr_api.domain.entities.Tag::get_Name()
+DA:7,0
 LF:3
-LH:1
+LH:0
 BRF:0
 BRH:0
 FNF:3
-FNH:1
+FNH:0
 end_of_record
 SF:c:\Users\jonas\OneDrive\Desktop\Programming\C#\Projects\vuttr-api\src\vuttr-api.domain\entities\Tool.cs
 FN:4,System.Int32 vuttr_api.domain.entities.Tool::get_Id()
-FNDA:2,System.Int32 vuttr_api.domain.entities.Tool::get_Id()
-DA:5,2
+FNDA:0,System.Int32 vuttr_api.domain.entities.Tool::get_Id()
+DA:5,0
 FN:5,System.String vuttr_api.domain.entities.Tool::get_Title()
-FNDA:2,System.String vuttr_api.domain.entities.Tool::get_Title()
-DA:6,2
+FNDA:0,System.String vuttr_api.domain.entities.Tool::get_Title()
+DA:6,0
 FN:6,System.String vuttr_api.domain.entities.Tool::get_Link()
-FNDA:2,System.String vuttr_api.domain.entities.Tool::get_Link()
-DA:7,2
+FNDA:0,System.String vuttr_api.domain.entities.Tool::get_Link()
+DA:7,0
 FN:7,System.String vuttr_api.domain.entities.Tool::get_Description()
-FNDA:2,System.String vuttr_api.domain.entities.Tool::get_Description()
-DA:8,2
+FNDA:0,System.String vuttr_api.domain.entities.Tool::get_Description()
+DA:8,0
 FN:8,System.Collections.Generic.IList`1<vuttr_api.domain.entities.Tag> vuttr_api.domain.entities.Tool::get_Tags()
-FNDA:3,System.Collections.Generic.IList`1<vuttr_api.domain.entities.Tag> vuttr_api.domain.entities.Tool::get_Tags()
-DA:9,3
+FNDA:0,System.Collections.Generic.IList`1<vuttr_api.domain.entities.Tag> vuttr_api.domain.entities.Tool::get_Tags()
+DA:9,0
 LF:5
-LH:5
+LH:0
 BRF:0
 BRH:0
 FNF:5
-FNH:5
+FNH:0
 end_of_record
 SF:c:\Users\jonas\OneDrive\Desktop\Programming\C#\Projects\vuttr-api\src\vuttr-api.domain\dtos\AuthenticationResponse.cs
 FN:4,System.String vuttr_api.domain.dtos.AuthenticationResponse::get_Token()
-FNDA:1,System.String vuttr_api.domain.dtos.AuthenticationResponse::get_Token()
-DA:5,1
+FNDA:0,System.String vuttr_api.domain.dtos.AuthenticationResponse::get_Token()
+DA:5,0
 FN:5,System.DateTime vuttr_api.domain.dtos.AuthenticationResponse::get_Expiration()
-FNDA:1,System.DateTime vuttr_api.domain.dtos.AuthenticationResponse::get_Expiration()
-DA:6,1
+FNDA:0,System.DateTime vuttr_api.domain.dtos.AuthenticationResponse::get_Expiration()
+DA:6,0
 LF:2
-LH:2
+LH:0
 BRF:0
 BRH:0
 FNF:2
-FNH:2
+FNH:0
 end_of_record
 SF:c:\Users\jonas\OneDrive\Desktop\Programming\C#\Projects\vuttr-api\src\vuttr-api.domain\dtos\CreateToolRequest.cs
 FN:8,System.String vuttr_api.domain.dtos.CreateToolRequest::get_Title()
-FNDA:19,System.String vuttr_api.domain.dtos.CreateToolRequest::get_Title()
-DA:9,19
+FNDA:0,System.String vuttr_api.domain.dtos.CreateToolRequest::get_Title()
+DA:9,0
 FN:13,System.String vuttr_api.domain.dtos.CreateToolRequest::get_Link()
-FNDA:4,System.String vuttr_api.domain.dtos.CreateToolRequest::get_Link()
-DA:14,4
+FNDA:0,System.String vuttr_api.domain.dtos.CreateToolRequest::get_Link()
+DA:14,0
 FN:17,System.String vuttr_api.domain.dtos.CreateToolRequest::get_Description()
-FNDA:4,System.String vuttr_api.domain.dtos.CreateToolRequest::get_Description()
-DA:18,4
+FNDA:0,System.String vuttr_api.domain.dtos.CreateToolRequest::get_Description()
+DA:18,0
 FN:20,System.Collections.Generic.List`1<System.String> vuttr_api.domain.dtos.CreateToolRequest::get_Tags()
-FNDA:3,System.Collections.Generic.List`1<System.String> vuttr_api.domain.dtos.CreateToolRequest::get_Tags()
-DA:21,3
+FNDA:0,System.Collections.Generic.List`1<System.String> vuttr_api.domain.dtos.CreateToolRequest::get_Tags()
+DA:21,0
 LF:4
-LH:4
+LH:0
 BRF:0
 BRH:0
 FNF:4
-FNH:4
+FNH:0
 end_of_record
 SF:c:\Users\jonas\OneDrive\Desktop\Programming\C#\Projects\vuttr-api\src\vuttr-api.domain\dtos\ToolViewModel.cs
 FN:4,System.Int32 vuttr_api.domain.dtos.ToolViewModel::get_Id()
-FNDA:115,System.Int32 vuttr_api.domain.dtos.ToolViewModel::get_Id()
-DA:5,115
+FNDA:0,System.Int32 vuttr_api.domain.dtos.ToolViewModel::get_Id()
+DA:5,0
 FN:5,System.String vuttr_api.domain.dtos.ToolViewModel::get_Title()
-FNDA:102,System.String vuttr_api.domain.dtos.ToolViewModel::get_Title()
-DA:6,102
+FNDA:0,System.String vuttr_api.domain.dtos.ToolViewModel::get_Title()
+DA:6,0
 FN:6,System.String vuttr_api.domain.dtos.ToolViewModel::get_Link()
-FNDA:87,System.String vuttr_api.domain.dtos.ToolViewModel::get_Link()
-DA:7,87
+FNDA:0,System.String vuttr_api.domain.dtos.ToolViewModel::get_Link()
+DA:7,0
 FN:7,System.String vuttr_api.domain.dtos.ToolViewModel::get_Description()
-FNDA:86,System.String vuttr_api.domain.dtos.ToolViewModel::get_Description()
-DA:8,86
+FNDA:0,System.String vuttr_api.domain.dtos.ToolViewModel::get_Description()
+DA:8,0
 FN:8,System.Collections.Generic.List`1<System.String> vuttr_api.domain.dtos.ToolViewModel::get_Tags()
-FNDA:99,System.Collections.Generic.List`1<System.String> vuttr_api.domain.dtos.ToolViewModel::get_Tags()
-DA:9,99
+FNDA:0,System.Collections.Generic.List`1<System.String> vuttr_api.domain.dtos.ToolViewModel::get_Tags()
+DA:9,0
 LF:5
-LH:5
+LH:0
 BRF:0
 BRH:0
 FNF:5
-FNH:5
+FNH:0
 end_of_record
 SF:c:\Users\jonas\OneDrive\Desktop\Programming\C#\Projects\vuttr-api\src\vuttr-api.domain\dtos\UpdateToolRequest.cs
 FN:8,System.String vuttr_api.domain.dtos.UpdateToolRequest::get_Title()
-FNDA:1,System.String vuttr_api.domain.dtos.UpdateToolRequest::get_Title()
-DA:9,1
+FNDA:0,System.String vuttr_api.domain.dtos.UpdateToolRequest::get_Title()
+DA:9,0
 FN:13,System.String vuttr_api.domain.dtos.UpdateToolRequest::get_Link()
-FNDA:4,System.String vuttr_api.domain.dtos.UpdateToolRequest::get_Link()
-DA:14,4
+FNDA:0,System.String vuttr_api.domain.dtos.UpdateToolRequest::get_Link()
+DA:14,0
 FN:17,System.String vuttr_api.domain.dtos.UpdateToolRequest::get_Description()
-FNDA:2,System.String vuttr_api.domain.dtos.UpdateToolRequest::get_Description()
-DA:18,2
+FNDA:0,System.String vuttr_api.domain.dtos.UpdateToolRequest::get_Description()
+DA:18,0
 FN:20,System.Collections.Generic.List`1<System.String> vuttr_api.domain.dtos.UpdateToolRequest::get_Tags()
-FNDA:1,System.Collections.Generic.List`1<System.String> vuttr_api.domain.dtos.UpdateToolRequest::get_Tags()
-DA:21,1
+FNDA:0,System.Collections.Generic.List`1<System.String> vuttr_api.domain.dtos.UpdateToolRequest::get_Tags()
+DA:21,0
 LF:4
-LH:4
+LH:0
 BRF:0
 BRH:0
 FNF:4
-FNH:4
+FNH:0
 end_of_record
 SF:c:\Users\jonas\OneDrive\Desktop\Programming\C#\Projects\vuttr-api\src\vuttr-api.domain\dtos\UserForAuthentication.cs
 FN:7,System.String vuttr_api.domain.dtos.UserForAuthentication::get_Username()
-FNDA:2,System.String vuttr_api.domain.dtos.UserForAuthentication::get_Username()
-DA:8,2
-FN:11,System.String vuttr_api.domain.dtos.UserForAuthentication::get_Password()
-FNDA:3,System.String vuttr_api.domain.dtos.UserForAuthentication::get_Password()
-DA:12,3
+FNDA:0,System.String vuttr_api.domain.dtos.UserForAuthentication::get_Username()
+DA:8,0
+FN:10,System.String vuttr_api.domain.dtos.UserForAuthentication::get_Password()
+FNDA:0,System.String vuttr_api.domain.dtos.UserForAuthentication::get_Password()
+DA:11,0
 LF:2
-LH:2
+LH:0
 BRF:0
 BRH:0
 FNF:2
-FNH:2
+FNH:0
 end_of_record
 SF:c:\Users\jonas\OneDrive\Desktop\Programming\C#\Projects\vuttr-api\src\vuttr-api.domain\dtos\UserForRegistration.cs
 FN:7,System.String vuttr_api.domain.dtos.UserForRegistration::get_Username()
-FNDA:4,System.String vuttr_api.domain.dtos.UserForRegistration::get_Username()
-DA:8,4
+FNDA:0,System.String vuttr_api.domain.dtos.UserForRegistration::get_Username()
+DA:8,0
 FN:11,System.String vuttr_api.domain.dtos.UserForRegistration::get_Email()
-FNDA:5,System.String vuttr_api.domain.dtos.UserForRegistration::get_Email()
-DA:12,5
-FN:13,System.String vuttr_api.domain.dtos.UserForRegistration::get_Password()
-FNDA:4,System.String vuttr_api.domain.dtos.UserForRegistration::get_Password()
-DA:14,4
+FNDA:0,System.String vuttr_api.domain.dtos.UserForRegistration::get_Email()
+DA:12,0
+FN:15,System.String vuttr_api.domain.dtos.UserForRegistration::get_Password()
+FNDA:0,System.String vuttr_api.domain.dtos.UserForRegistration::get_Password()
+DA:16,0
 LF:3
-LH:3
+LH:0
 BRF:0
 BRH:0
 FNF:3
-FNH:3
+FNH:0
 end_of_record
 SF:c:\Users\jonas\OneDrive\Desktop\Programming\C#\Projects\vuttr-api\src\vuttr-api.domain\dtos\UserViewModel.cs
 FN:4,System.Guid vuttr_api.domain.dtos.UserViewModel::get_Id()
 FNDA:0,System.Guid vuttr_api.domain.dtos.UserViewModel::get_Id()
 DA:5,0
 FN:5,System.String vuttr_api.domain.dtos.UserViewModel::get_Username()
-FNDA:2,System.String vuttr_api.domain.dtos.UserViewModel::get_Username()
-DA:6,2
+FNDA:0,System.String vuttr_api.domain.dtos.UserViewModel::get_Username()
+DA:6,0
 FN:6,System.String vuttr_api.domain.dtos.UserViewModel::get_Email()
-FNDA:2,System.String vuttr_api.domain.dtos.UserViewModel::get_Email()
-DA:7,2
+FNDA:0,System.String vuttr_api.domain.dtos.UserViewModel::get_Email()
+DA:7,0
 LF:3
-LH:2
+LH:0
 BRF:0
 BRH:0
 FNF:3
-FNH:2
+FNH:0
 end_of_record
 SF:c:\Users\jonas\OneDrive\Desktop\Programming\C#\Projects\vuttr-api\src\vuttr-api.infrastructure\ServiceExtensions.cs
 FN:22,System.Void vuttr_api.infrastructure.ServiceExtensions::AddMappingConfiguration(Microsoft.Extensions.DependencyInjection.IServiceCollection)
@@ -244,64 +244,65 @@ FNH:0
 end_of_record
 SF:c:\Users\jonas\OneDrive\Desktop\Programming\C#\Projects\vuttr-api\src\vuttr-api.infrastructure\mapping\MappingProfile.cs
 FN:8,System.Void vuttr_api.infrastructure.mapping.MappingProfile::.ctor()
-FNDA:21,System.Void vuttr_api.infrastructure.mapping.MappingProfile::.ctor()
-DA:9,21
-DA:10,21
-DA:11,21
-DA:12,42
-DA:13,21
-DA:14,42
-DA:15,21
-DA:16,42
-DA:17,21
-DA:18,21
-LF:10
-LH:10
+FNDA:0,System.Void vuttr_api.infrastructure.mapping.MappingProfile::.ctor()
+DA:9,0
+DA:10,0
+DA:11,0
+DA:12,0
+DA:13,0
+DA:14,0
+DA:15,0
+DA:16,0
+DA:17,0
+DA:18,0
+DA:19,0
+LF:11
+LH:0
 BRF:0
 BRH:0
 FNF:1
-FNH:1
+FNH:0
 end_of_record
 SF:c:\Users\jonas\OneDrive\Desktop\Programming\C#\Projects\vuttr-api\src\vuttr-api.infrastructure\mapping\ReverseTagResolver.cs
 FN:9,System.Collections.Generic.List`1<System.String> vuttr_api.infrastructure.mapping.ReverseTagResolver::Resolve(vuttr_api.domain.entities.Tool,vuttr_api.domain.dtos.ToolViewModel,System.Collections.Generic.List`1<System.String>,AutoMapper.ResolutionContext)
-FNDA:1,System.Collections.Generic.List`1<System.String> vuttr_api.infrastructure.mapping.ReverseTagResolver::Resolve(vuttr_api.domain.entities.Tool,vuttr_api.domain.dtos.ToolViewModel,System.Collections.Generic.List`1<System.String>,AutoMapper.ResolutionContext)
-DA:10,1
-DA:11,1
-DA:13,17
-DA:14,7
-DA:15,7
-DA:16,7
-DA:18,1
-DA:19,1
-BRDA:13,50,1,7
-BRDA:13,50,0,1
+FNDA:0,System.Collections.Generic.List`1<System.String> vuttr_api.infrastructure.mapping.ReverseTagResolver::Resolve(vuttr_api.domain.entities.Tool,vuttr_api.domain.dtos.ToolViewModel,System.Collections.Generic.List`1<System.String>,AutoMapper.ResolutionContext)
+DA:10,0
+DA:11,0
+DA:13,0
+DA:14,0
+DA:15,0
+DA:16,0
+DA:18,0
+DA:19,0
+BRDA:13,50,1,0
+BRDA:13,50,0,0
 LF:8
-LH:8
+LH:0
 BRF:2
-BRH:2
+BRH:0
 FNF:1
-FNH:1
+FNH:0
 end_of_record
 SF:c:\Users\jonas\OneDrive\Desktop\Programming\C#\Projects\vuttr-api\src\vuttr-api.infrastructure\mapping\TagResolver.cs
 FN:9,System.Collections.Generic.IList`1<vuttr_api.domain.entities.Tag> vuttr_api.infrastructure.mapping.TagResolver::Resolve(vuttr_api.domain.dtos.CreateToolRequest,vuttr_api.domain.entities.Tool,System.Collections.Generic.IList`1<vuttr_api.domain.entities.Tag>,AutoMapper.ResolutionContext)
-FNDA:1,System.Collections.Generic.IList`1<vuttr_api.domain.entities.Tag> vuttr_api.infrastructure.mapping.TagResolver::Resolve(vuttr_api.domain.dtos.CreateToolRequest,vuttr_api.domain.entities.Tool,System.Collections.Generic.IList`1<vuttr_api.domain.entities.Tag>,AutoMapper.ResolutionContext)
-DA:10,1
-DA:11,1
-DA:13,17
-DA:14,7
-DA:15,7
-DA:16,7
-DA:17,7
-DA:18,1
-DA:19,1
-BRDA:13,61,1,7
-BRDA:13,61,0,1
+FNDA:0,System.Collections.Generic.IList`1<vuttr_api.domain.entities.Tag> vuttr_api.infrastructure.mapping.TagResolver::Resolve(vuttr_api.domain.dtos.CreateToolRequest,vuttr_api.domain.entities.Tool,System.Collections.Generic.IList`1<vuttr_api.domain.entities.Tag>,AutoMapper.ResolutionContext)
+DA:10,0
+DA:11,0
+DA:13,0
+DA:14,0
+DA:15,0
+DA:16,0
+DA:17,0
+DA:18,0
+DA:19,0
+BRDA:13,61,1,0
+BRDA:13,61,0,0
 LF:9
-LH:9
+LH:0
 BRF:2
-BRH:2
+BRH:0
 FNF:1
-FNH:1
+FNH:0
 end_of_record
 SF:c:\Users\jonas\OneDrive\Desktop\Programming\C#\Projects\vuttr-api\src\vuttr-api.infrastructure\mapping\UpdateTagResolver.cs
 FN:9,System.Collections.Generic.IList`1<vuttr_api.domain.entities.Tag> vuttr_api.infrastructure.mapping.UpdateTagResolver::Resolve(vuttr_api.domain.dtos.UpdateToolRequest,vuttr_api.domain.entities.Tool,System.Collections.Generic.IList`1<vuttr_api.domain.entities.Tag>,AutoMapper.ResolutionContext)
@@ -325,16 +326,16 @@ FNF:1
 FNH:0
 end_of_record
 SF:c:\Users\jonas\OneDrive\Desktop\Programming\C#\Projects\vuttr-api\src\vuttr-api.persistence\ApplicationDbContext.cs
-FN:9,System.Void vuttr_api.persistence.ApplicationDbContext::OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)
+FN:12,System.Void vuttr_api.persistence.ApplicationDbContext::OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)
 FNDA:0,System.Void vuttr_api.persistence.ApplicationDbContext::OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)
-DA:10,0
-DA:11,0
-DA:12,0
 DA:13,0
 DA:14,0
-FN:6,System.Void vuttr_api.persistence.ApplicationDbContext::.ctor(Microsoft.EntityFrameworkCore.DbContextOptions`1<vuttr_api.persistence.ApplicationDbContext>)
+DA:15,0
+DA:16,0
+DA:17,0
+FN:9,System.Void vuttr_api.persistence.ApplicationDbContext::.ctor(Microsoft.EntityFrameworkCore.DbContextOptions`1<vuttr_api.persistence.ApplicationDbContext>)
 FNDA:0,System.Void vuttr_api.persistence.ApplicationDbContext::.ctor(Microsoft.EntityFrameworkCore.DbContextOptions`1<vuttr_api.persistence.ApplicationDbContext>)
-DA:7,0
+DA:10,0
 LF:6
 LH:0
 BRF:0
@@ -375,21 +376,24 @@ FNF:1
 FNH:0
 end_of_record
 SF:c:\Users\jonas\OneDrive\Desktop\Programming\C#\Projects\vuttr-api\src\vuttr-api.persistence\repositories\ToolRepository.cs
-FN:38,vuttr_api.domain.entities.Tool vuttr_api.persistence.repositories.ToolRepository::RetrieveById(System.Int32)
+FN:40,vuttr_api.domain.entities.Tool vuttr_api.persistence.repositories.ToolRepository::RetrieveById(System.Int32)
 FNDA:0,vuttr_api.domain.entities.Tool vuttr_api.persistence.repositories.ToolRepository::RetrieveById(System.Int32)
-DA:39,0
-DA:40,0
 DA:41,0
-FN:43,System.Collections.Generic.IEnumerable`1<vuttr_api.domain.entities.Tool> vuttr_api.persistence.repositories.ToolRepository::RetrieveByTag(System.String)
+DA:42,0
+DA:43,0
+FN:45,System.Collections.Generic.IEnumerable`1<vuttr_api.domain.entities.Tool> vuttr_api.persistence.repositories.ToolRepository::RetrieveByTag(System.String)
 FNDA:0,System.Collections.Generic.IEnumerable`1<vuttr_api.domain.entities.Tool> vuttr_api.persistence.repositories.ToolRepository::RetrieveByTag(System.String)
-DA:44,0
-DA:45,0
 DA:46,0
-FN:48,vuttr_api.domain.entities.Tool vuttr_api.persistence.repositories.ToolRepository::RetrieveByTitle(System.String)
-FNDA:0,vuttr_api.domain.entities.Tool vuttr_api.persistence.repositories.ToolRepository::RetrieveByTitle(System.String)
+DA:47,0
+DA:48,0
 DA:49,0
 DA:50,0
 DA:51,0
+FN:53,vuttr_api.domain.entities.Tool vuttr_api.persistence.repositories.ToolRepository::RetrieveByTitle(System.String)
+FNDA:0,vuttr_api.domain.entities.Tool vuttr_api.persistence.repositories.ToolRepository::RetrieveByTitle(System.String)
+DA:54,0
+DA:55,0
+DA:56,0
 FN:12,System.Void vuttr_api.persistence.repositories.ToolRepository::.ctor(vuttr_api.persistence.ApplicationDbContext)
 FNDA:0,System.Void vuttr_api.persistence.repositories.ToolRepository::.ctor(vuttr_api.persistence.ApplicationDbContext)
 DA:13,0
@@ -403,36 +407,997 @@ DA:20,0
 DA:21,0
 DA:22,0
 DA:23,0
-BRDA:22,319,0,0
-BRDA:22,319,1,0
+BRDA:22,307,0,0
+BRDA:22,307,1,0
 FN:25,System.Void vuttr_api.persistence.repositories.ToolRepository/<DeleteAsync>d__4::MoveNext()
 FNDA:0,System.Void vuttr_api.persistence.repositories.ToolRepository/<DeleteAsync>d__4::MoveNext()
+DA:26,0
+DA:27,0
+DA:29,0
+DA:30,0
+DA:32,0
+DA:33,0
+BRDA:29,193,0,0
+BRDA:29,193,1,0
+FN:35,System.Void vuttr_api.persistence.repositories.ToolRepository/<RetrieveAllAsync>d__5::MoveNext()
+FNDA:0,System.Void vuttr_api.persistence.repositories.ToolRepository/<RetrieveAllAsync>d__5::MoveNext()
+DA:36,0
+DA:37,0
+DA:38,0
+FN:58,System.Void vuttr_api.persistence.repositories.ToolRepository/<UpdateAsync>d__9::MoveNext()
+FNDA:0,System.Void vuttr_api.persistence.repositories.ToolRepository/<UpdateAsync>d__9::MoveNext()
+DA:59,0
+DA:60,0
+DA:61,0
+DA:62,0
+BRDA:61,171,0,0
+BRDA:61,171,1,0
+LF:34
+LH:0
+BRF:6
+BRH:0
+FNF:8
+FNH:0
+end_of_record
+SF:c:\Users\jonas\OneDrive\Desktop\Programming\C#\Projects\vuttr-api\src\vuttr-api.persistence\migrations\20230604134247_InitialDatabase.cs
+FN:11,System.Void vuttr_api.persistence.migrations.InitialDatabase::Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+FNDA:0,System.Void vuttr_api.persistence.migrations.InitialDatabase::Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+DA:12,0
+DA:13,0
+DA:14,0
+DA:15,0
+DA:16,0
+DA:17,0
+DA:18,0
+DA:19,0
+DA:20,0
+DA:21,0
+DA:22,0
+DA:23,0
+DA:24,0
+DA:25,0
+DA:26,0
+DA:28,0
+DA:29,0
+DA:30,0
+DA:31,0
+DA:32,0
+DA:33,0
+DA:34,0
+DA:35,0
+DA:36,0
+DA:37,0
+DA:38,0
+DA:39,0
+DA:40,0
+DA:41,0
+DA:42,0
+DA:43,0
+DA:44,0
+DA:45,0
+DA:46,0
+DA:48,0
+DA:49,0
+DA:50,0
+DA:51,0
+DA:52,0
+FN:55,System.Void vuttr_api.persistence.migrations.InitialDatabase::Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+FNDA:0,System.Void vuttr_api.persistence.migrations.InitialDatabase::Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+DA:56,0
+DA:57,0
+DA:58,0
+DA:60,0
+DA:61,0
+DA:62,0
+LF:45
+LH:0
+BRF:0
+BRH:0
+FNF:2
+FNH:0
+end_of_record
+SF:c:\Users\jonas\OneDrive\Desktop\Programming\C#\Projects\vuttr-api\src\vuttr-api.persistence\migrations\20230604134247_InitialDatabase.Designer.cs
+FN:18,System.Void vuttr_api.persistence.migrations.InitialDatabase::BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)
+FNDA:0,System.Void vuttr_api.persistence.migrations.InitialDatabase::BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)
+DA:19,0
+DA:21,0
+DA:22,0
+DA:23,0
+DA:25,0
+DA:27,0
+DA:28,0
+DA:29,0
+DA:30,0
+DA:31,0
+DA:32,0
+DA:33,0
+DA:34,0
+DA:35,0
+DA:36,0
+DA:37,0
+DA:38,0
+DA:39,0
+DA:40,0
+DA:41,0
+DA:42,0
+DA:43,0
+DA:44,0
+DA:45,0
+DA:46,0
+DA:48,0
+DA:49,0
+DA:50,0
+DA:51,0
+DA:52,0
+DA:53,0
+DA:54,0
+DA:55,0
+DA:56,0
+DA:57,0
+DA:58,0
+DA:59,0
+DA:60,0
+DA:61,0
+DA:62,0
+DA:63,0
+DA:64,0
+DA:65,0
+DA:66,0
+DA:67,0
+DA:68,0
+DA:69,0
+DA:70,0
+DA:71,0
+DA:72,0
+DA:73,0
+DA:74,0
+DA:76,0
+DA:77,0
+DA:78,0
+DA:79,0
+DA:80,0
+DA:81,0
+DA:82,0
+DA:83,0
+DA:85,0
+DA:86,0
+DA:87,0
+DA:88,0
+DA:90,0
+LF:65
+LH:0
+BRF:0
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:c:\Users\jonas\OneDrive\Desktop\Programming\C#\Projects\vuttr-api\src\vuttr-api.persistence\migrations\20230604142604_ChangedDbContextToIdentityContext.cs
+FN:12,System.Void vuttr_api.persistence.migrations.ChangedDbContextToIdentityContext::Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+FNDA:0,System.Void vuttr_api.persistence.migrations.ChangedDbContextToIdentityContext::Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+DA:13,0
+DA:14,0
+DA:15,0
+DA:16,0
+DA:17,0
+DA:18,0
+DA:19,0
+DA:20,0
+DA:21,0
+DA:22,0
+DA:23,0
+DA:24,0
+DA:25,0
+DA:26,0
+DA:28,0
+DA:29,0
+DA:30,0
+DA:31,0
+DA:32,0
+DA:33,0
+DA:34,0
+DA:35,0
+DA:36,0
+DA:37,0
+DA:38,0
+DA:39,0
+DA:40,0
+DA:41,0
+DA:42,0
+DA:43,0
+DA:44,0
+DA:45,0
+DA:46,0
+DA:47,0
+DA:48,0
+DA:49,0
+DA:50,0
+DA:51,0
+DA:52,0
+DA:54,0
+DA:55,0
+DA:56,0
+DA:57,0
+DA:58,0
+DA:59,0
+DA:60,0
+DA:61,0
+DA:62,0
+DA:63,0
+DA:64,0
+DA:65,0
+DA:66,0
+DA:67,0
+DA:68,0
+DA:69,0
+DA:70,0
+DA:71,0
+DA:72,0
+DA:73,0
+DA:75,0
+DA:76,0
+DA:77,0
+DA:78,0
+DA:79,0
+DA:80,0
+DA:81,0
+DA:82,0
+DA:83,0
+DA:84,0
+DA:85,0
+DA:86,0
+DA:87,0
+DA:88,0
+DA:89,0
+DA:90,0
+DA:91,0
+DA:92,0
+DA:93,0
+DA:94,0
+DA:96,0
+DA:97,0
+DA:98,0
+DA:99,0
+DA:100,0
+DA:101,0
+DA:102,0
+DA:103,0
+DA:104,0
+DA:105,0
+DA:106,0
+DA:107,0
+DA:108,0
+DA:109,0
+DA:110,0
+DA:111,0
+DA:112,0
+DA:113,0
+DA:114,0
+DA:116,0
+DA:117,0
+DA:118,0
+DA:119,0
+DA:120,0
+DA:121,0
+DA:122,0
+DA:123,0
+DA:124,0
+DA:125,0
+DA:126,0
+DA:127,0
+DA:128,0
+DA:129,0
+DA:130,0
+DA:131,0
+DA:132,0
+DA:133,0
+DA:134,0
+DA:135,0
+DA:136,0
+DA:137,0
+DA:138,0
+DA:140,0
+DA:141,0
+DA:142,0
+DA:143,0
+DA:144,0
+DA:145,0
+DA:146,0
+DA:147,0
+DA:148,0
+DA:149,0
+DA:150,0
+DA:151,0
+DA:152,0
+DA:153,0
+DA:154,0
+DA:155,0
+DA:156,0
+DA:157,0
+DA:158,0
+DA:160,0
+DA:161,0
+DA:162,0
+DA:163,0
+DA:165,0
+DA:166,0
+DA:167,0
+DA:168,0
+DA:169,0
+DA:170,0
+DA:172,0
+DA:173,0
+DA:174,0
+DA:175,0
+DA:177,0
+DA:178,0
+DA:179,0
+DA:180,0
+DA:182,0
+DA:183,0
+DA:184,0
+DA:185,0
+DA:187,0
+DA:188,0
+DA:189,0
+DA:190,0
+DA:192,0
+DA:193,0
+DA:194,0
+DA:195,0
+DA:196,0
+DA:197,0
+DA:198,0
+FN:201,System.Void vuttr_api.persistence.migrations.ChangedDbContextToIdentityContext::Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+FNDA:0,System.Void vuttr_api.persistence.migrations.ChangedDbContextToIdentityContext::Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+DA:202,0
+DA:203,0
+DA:204,0
+DA:206,0
+DA:207,0
+DA:209,0
+DA:210,0
+DA:212,0
+DA:213,0
+DA:215,0
+DA:216,0
+DA:218,0
+DA:219,0
+DA:221,0
+DA:222,0
+DA:223,0
+LF:189
+LH:0
+BRF:0
+BRH:0
+FNF:2
+FNH:0
+end_of_record
+SF:c:\Users\jonas\OneDrive\Desktop\Programming\C#\Projects\vuttr-api\src\vuttr-api.persistence\migrations\20230604142604_ChangedDbContextToIdentityContext.Designer.cs
+FN:19,System.Void vuttr_api.persistence.migrations.ChangedDbContextToIdentityContext::BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)
+FNDA:0,System.Void vuttr_api.persistence.migrations.ChangedDbContextToIdentityContext::BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)
+DA:20,0
+DA:22,0
+DA:23,0
+DA:24,0
+DA:26,0
+DA:28,0
+DA:29,0
+DA:30,0
+DA:31,0
+DA:32,0
+DA:33,0
+DA:34,0
+DA:35,0
+DA:36,0
+DA:37,0
+DA:38,0
+DA:39,0
+DA:40,0
+DA:41,0
+DA:42,0
+DA:43,0
+DA:44,0
+DA:45,0
+DA:46,0
+DA:47,0
+DA:48,0
+DA:49,0
+DA:50,0
+DA:51,0
+DA:52,0
+DA:53,0
+DA:54,0
+DA:56,0
+DA:57,0
+DA:58,0
+DA:59,0
+DA:60,0
+DA:61,0
+DA:62,0
+DA:63,0
+DA:64,0
+DA:65,0
+DA:66,0
+DA:67,0
+DA:68,0
+DA:69,0
+DA:70,0
+DA:71,0
+DA:72,0
+DA:73,0
+DA:74,0
+DA:75,0
+DA:76,0
+DA:77,0
+DA:78,0
+DA:80,0
+DA:81,0
+DA:82,0
+DA:83,0
+DA:84,0
+DA:85,0
+DA:86,0
+DA:87,0
+DA:88,0
+DA:89,0
+DA:90,0
+DA:91,0
+DA:92,0
+DA:93,0
+DA:94,0
+DA:95,0
+DA:96,0
+DA:97,0
+DA:98,0
+DA:99,0
+DA:100,0
+DA:101,0
+DA:102,0
+DA:104,0
+DA:105,0
+DA:106,0
+DA:107,0
+DA:108,0
+DA:109,0
+DA:110,0
+DA:111,0
+DA:112,0
+DA:113,0
+DA:114,0
+DA:115,0
+DA:116,0
+DA:117,0
+DA:118,0
+DA:119,0
+DA:120,0
+DA:121,0
+DA:122,0
+DA:123,0
+DA:125,0
+DA:126,0
+DA:127,0
+DA:128,0
+DA:129,0
+DA:130,0
+DA:131,0
+DA:132,0
+DA:133,0
+DA:134,0
+DA:135,0
+DA:136,0
+DA:137,0
+DA:138,0
+DA:140,0
+DA:141,0
+DA:142,0
+DA:143,0
+DA:144,0
+DA:145,0
+DA:146,0
+DA:147,0
+DA:148,0
+DA:149,0
+DA:150,0
+DA:151,0
+DA:152,0
+DA:153,0
+DA:154,0
+DA:155,0
+DA:156,0
+DA:157,0
+DA:159,0
+DA:160,0
+DA:161,0
+DA:162,0
+DA:163,0
+DA:164,0
+DA:165,0
+DA:166,0
+DA:167,0
+DA:168,0
+DA:169,0
+DA:170,0
+DA:171,0
+DA:172,0
+DA:173,0
+DA:174,0
+DA:175,0
+DA:176,0
+DA:177,0
+DA:178,0
+DA:179,0
+DA:180,0
+DA:181,0
+DA:182,0
+DA:183,0
+DA:184,0
+DA:185,0
+DA:186,0
+DA:187,0
+DA:188,0
+DA:189,0
+DA:190,0
+DA:191,0
+DA:192,0
+DA:193,0
+DA:194,0
+DA:195,0
+DA:196,0
+DA:197,0
+DA:198,0
+DA:199,0
+DA:200,0
+DA:201,0
+DA:202,0
+DA:203,0
+DA:204,0
+DA:205,0
+DA:206,0
+DA:207,0
+DA:208,0
+DA:209,0
+DA:210,0
+DA:211,0
+DA:212,0
+DA:213,0
+DA:214,0
+DA:215,0
+DA:216,0
+DA:217,0
+DA:218,0
+DA:219,0
+DA:220,0
+DA:221,0
+DA:222,0
+DA:223,0
+DA:224,0
+DA:225,0
+DA:226,0
+DA:228,0
+DA:229,0
+DA:230,0
+DA:231,0
+DA:232,0
+DA:233,0
+DA:234,0
+DA:235,0
+DA:236,0
+DA:237,0
+DA:238,0
+DA:239,0
+DA:240,0
+DA:241,0
+DA:242,0
+DA:243,0
+DA:244,0
+DA:245,0
+DA:246,0
+DA:247,0
+DA:249,0
+DA:250,0
+DA:251,0
+DA:252,0
+DA:253,0
+DA:254,0
+DA:255,0
+DA:256,0
+DA:257,0
+DA:258,0
+DA:259,0
+DA:260,0
+DA:261,0
+DA:262,0
+DA:263,0
+DA:264,0
+DA:265,0
+DA:266,0
+DA:267,0
+DA:268,0
+DA:269,0
+DA:270,0
+DA:271,0
+DA:272,0
+DA:273,0
+DA:274,0
+DA:275,0
+DA:277,0
+DA:278,0
+DA:279,0
+DA:280,0
+DA:281,0
+DA:282,0
+DA:283,0
+DA:284,0
+DA:286,0
+DA:287,0
+DA:288,0
+DA:289,0
+DA:290,0
+DA:291,0
+DA:292,0
+DA:293,0
+DA:295,0
+DA:296,0
+DA:297,0
+DA:298,0
+DA:299,0
+DA:300,0
+DA:301,0
+DA:302,0
+DA:304,0
+DA:305,0
+DA:306,0
+DA:307,0
+DA:308,0
+DA:309,0
+DA:310,0
+DA:311,0
+DA:312,0
+DA:313,0
+DA:314,0
+DA:315,0
+DA:316,0
+DA:317,0
+DA:319,0
+DA:320,0
+DA:321,0
+DA:322,0
+DA:323,0
+DA:324,0
+DA:325,0
+DA:326,0
+DA:328,0
+DA:329,0
+DA:330,0
+DA:331,0
+DA:332,0
+DA:333,0
+DA:334,0
+DA:335,0
+DA:337,0
+DA:338,0
+DA:339,0
+DA:340,0
+DA:342,0
+LF:304
+LH:0
+BRF:0
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:c:\Users\jonas\OneDrive\Desktop\Programming\C#\Projects\vuttr-api\src\vuttr-api.persistence\migrations\ApplicationDbContextModelSnapshot.cs
+FN:16,System.Void vuttr_api.persistence.migrations.ApplicationDbContextModelSnapshot::BuildModel(Microsoft.EntityFrameworkCore.ModelBuilder)
+FNDA:0,System.Void vuttr_api.persistence.migrations.ApplicationDbContextModelSnapshot::BuildModel(Microsoft.EntityFrameworkCore.ModelBuilder)
+DA:17,0
+DA:19,0
+DA:20,0
+DA:21,0
+DA:23,0
+DA:25,0
 DA:26,0
 DA:27,0
 DA:28,0
 DA:29,0
 DA:30,0
 DA:31,0
-BRDA:28,193,0,0
-BRDA:28,193,1,0
-FN:33,System.Void vuttr_api.persistence.repositories.ToolRepository/<RetrieveAllAsync>d__5::MoveNext()
-FNDA:0,System.Void vuttr_api.persistence.repositories.ToolRepository/<RetrieveAllAsync>d__5::MoveNext()
+DA:32,0
+DA:33,0
 DA:34,0
 DA:35,0
 DA:36,0
-FN:53,System.Void vuttr_api.persistence.repositories.ToolRepository/<UpdateAsync>d__9::MoveNext()
-FNDA:0,System.Void vuttr_api.persistence.repositories.ToolRepository/<UpdateAsync>d__9::MoveNext()
+DA:37,0
+DA:38,0
+DA:39,0
+DA:40,0
+DA:41,0
+DA:42,0
+DA:43,0
+DA:44,0
+DA:45,0
+DA:46,0
+DA:47,0
+DA:48,0
+DA:49,0
+DA:50,0
+DA:51,0
+DA:53,0
 DA:54,0
 DA:55,0
 DA:56,0
 DA:57,0
-BRDA:56,183,0,0
-BRDA:56,183,1,0
-LF:31
+DA:58,0
+DA:59,0
+DA:60,0
+DA:61,0
+DA:62,0
+DA:63,0
+DA:64,0
+DA:65,0
+DA:66,0
+DA:67,0
+DA:68,0
+DA:69,0
+DA:70,0
+DA:71,0
+DA:72,0
+DA:73,0
+DA:74,0
+DA:75,0
+DA:77,0
+DA:78,0
+DA:79,0
+DA:80,0
+DA:81,0
+DA:82,0
+DA:83,0
+DA:84,0
+DA:85,0
+DA:86,0
+DA:87,0
+DA:88,0
+DA:89,0
+DA:90,0
+DA:91,0
+DA:92,0
+DA:93,0
+DA:94,0
+DA:95,0
+DA:96,0
+DA:97,0
+DA:98,0
+DA:99,0
+DA:101,0
+DA:102,0
+DA:103,0
+DA:104,0
+DA:105,0
+DA:106,0
+DA:107,0
+DA:108,0
+DA:109,0
+DA:110,0
+DA:111,0
+DA:112,0
+DA:113,0
+DA:114,0
+DA:115,0
+DA:116,0
+DA:117,0
+DA:118,0
+DA:119,0
+DA:120,0
+DA:122,0
+DA:123,0
+DA:124,0
+DA:125,0
+DA:126,0
+DA:127,0
+DA:128,0
+DA:129,0
+DA:130,0
+DA:131,0
+DA:132,0
+DA:133,0
+DA:134,0
+DA:135,0
+DA:137,0
+DA:138,0
+DA:139,0
+DA:140,0
+DA:141,0
+DA:142,0
+DA:143,0
+DA:144,0
+DA:145,0
+DA:146,0
+DA:147,0
+DA:148,0
+DA:149,0
+DA:150,0
+DA:151,0
+DA:152,0
+DA:153,0
+DA:154,0
+DA:156,0
+DA:157,0
+DA:158,0
+DA:159,0
+DA:160,0
+DA:161,0
+DA:162,0
+DA:163,0
+DA:164,0
+DA:165,0
+DA:166,0
+DA:167,0
+DA:168,0
+DA:169,0
+DA:170,0
+DA:171,0
+DA:172,0
+DA:173,0
+DA:174,0
+DA:175,0
+DA:176,0
+DA:177,0
+DA:178,0
+DA:179,0
+DA:180,0
+DA:181,0
+DA:182,0
+DA:183,0
+DA:184,0
+DA:185,0
+DA:186,0
+DA:187,0
+DA:188,0
+DA:189,0
+DA:190,0
+DA:191,0
+DA:192,0
+DA:193,0
+DA:194,0
+DA:195,0
+DA:196,0
+DA:197,0
+DA:198,0
+DA:199,0
+DA:200,0
+DA:201,0
+DA:202,0
+DA:203,0
+DA:204,0
+DA:205,0
+DA:206,0
+DA:207,0
+DA:208,0
+DA:209,0
+DA:210,0
+DA:211,0
+DA:212,0
+DA:213,0
+DA:214,0
+DA:215,0
+DA:216,0
+DA:217,0
+DA:218,0
+DA:219,0
+DA:220,0
+DA:221,0
+DA:222,0
+DA:223,0
+DA:225,0
+DA:226,0
+DA:227,0
+DA:228,0
+DA:229,0
+DA:230,0
+DA:231,0
+DA:232,0
+DA:233,0
+DA:234,0
+DA:235,0
+DA:236,0
+DA:237,0
+DA:238,0
+DA:239,0
+DA:240,0
+DA:241,0
+DA:242,0
+DA:243,0
+DA:244,0
+DA:246,0
+DA:247,0
+DA:248,0
+DA:249,0
+DA:250,0
+DA:251,0
+DA:252,0
+DA:253,0
+DA:254,0
+DA:255,0
+DA:256,0
+DA:257,0
+DA:258,0
+DA:259,0
+DA:260,0
+DA:261,0
+DA:262,0
+DA:263,0
+DA:264,0
+DA:265,0
+DA:266,0
+DA:267,0
+DA:268,0
+DA:269,0
+DA:270,0
+DA:271,0
+DA:272,0
+DA:274,0
+DA:275,0
+DA:276,0
+DA:277,0
+DA:278,0
+DA:279,0
+DA:280,0
+DA:281,0
+DA:283,0
+DA:284,0
+DA:285,0
+DA:286,0
+DA:287,0
+DA:288,0
+DA:289,0
+DA:290,0
+DA:292,0
+DA:293,0
+DA:294,0
+DA:295,0
+DA:296,0
+DA:297,0
+DA:298,0
+DA:299,0
+DA:301,0
+DA:302,0
+DA:303,0
+DA:304,0
+DA:305,0
+DA:306,0
+DA:307,0
+DA:308,0
+DA:309,0
+DA:310,0
+DA:311,0
+DA:312,0
+DA:313,0
+DA:314,0
+DA:316,0
+DA:317,0
+DA:318,0
+DA:319,0
+DA:320,0
+DA:321,0
+DA:322,0
+DA:323,0
+DA:325,0
+DA:326,0
+DA:327,0
+DA:328,0
+DA:329,0
+DA:330,0
+DA:331,0
+DA:332,0
+DA:334,0
+DA:335,0
+DA:336,0
+DA:337,0
+DA:339,0
+LF:304
 LH:0
-BRF:6
+BRF:0
 BRH:0
-FNF:8
+FNF:1
 FNH:0
 end_of_record
 SF:c:\Users\jonas\OneDrive\Desktop\Programming\C#\Projects\vuttr-api\src\vuttr-api.presentation\Program.cs
@@ -446,19 +1411,45 @@ DA:11,0
 DA:13,0
 DA:15,0
 DA:16,0
+DA:17,0
 DA:18,0
+DA:19,0
+DA:20,0
 DA:21,0
 DA:22,0
 DA:23,0
 DA:24,0
 DA:25,0
+DA:26,0
 DA:27,0
+DA:28,0
 DA:29,0
+DA:30,0
 DA:31,0
+DA:32,0
 DA:33,0
-BRDA:21,154,0,0
-BRDA:21,154,1,0
-LF:18
+DA:34,0
+DA:35,0
+DA:36,0
+DA:37,0
+DA:38,0
+DA:39,0
+DA:40,0
+DA:41,0
+DA:42,0
+DA:44,0
+DA:47,0
+DA:48,0
+DA:49,0
+DA:50,0
+DA:51,0
+DA:53,0
+DA:55,0
+DA:57,0
+DA:59,0
+BRDA:47,154,0,0
+BRDA:47,154,1,0
+LF:44
 LH:0
 BRF:2
 BRH:0
@@ -467,135 +1458,135 @@ FNH:0
 end_of_record
 SF:c:\Users\jonas\OneDrive\Desktop\Programming\C#\Projects\vuttr-api\src\vuttr-api.presentation\Controllers\AuthenticationController.cs
 FN:12,System.Void vuttr_api.presentation.controllers.AuthenticationController::.ctor(vuttr_api.services.contracts.IUserService)
-FNDA:7,System.Void vuttr_api.presentation.controllers.AuthenticationController::.ctor(vuttr_api.services.contracts.IUserService)
-DA:13,7
-DA:14,7
-DA:15,7
-DA:16,7
+FNDA:0,System.Void vuttr_api.presentation.controllers.AuthenticationController::.ctor(vuttr_api.services.contracts.IUserService)
+DA:13,0
+DA:14,0
+DA:15,0
+DA:16,0
 FN:36,System.Void vuttr_api.presentation.controllers.AuthenticationController/<Authenticate>d__3::MoveNext()
-FNDA:3,System.Void vuttr_api.presentation.controllers.AuthenticationController/<Authenticate>d__3::MoveNext()
-DA:37,3
-DA:38,4
-DA:40,2
-DA:42,2
-DA:43,3
-BRDA:38,39,0,1
-BRDA:38,39,1,2
-BRDA:42,212,0,1
-BRDA:42,212,1,1
+FNDA:0,System.Void vuttr_api.presentation.controllers.AuthenticationController/<Authenticate>d__3::MoveNext()
+DA:37,0
+DA:38,0
+DA:40,0
+DA:42,0
+DA:43,0
+BRDA:38,39,0,0
+BRDA:38,39,1,0
+BRDA:42,212,0,0
+BRDA:42,212,1,0
 FN:21,System.Void vuttr_api.presentation.controllers.AuthenticationController/<Resigter>d__2::MoveNext()
-FNDA:4,System.Void vuttr_api.presentation.controllers.AuthenticationController/<Resigter>d__2::MoveNext()
-DA:22,4
-DA:23,5
-DA:25,4
-DA:27,2
-DA:29,2
-DA:30,4
-BRDA:23,50,0,1
-BRDA:23,50,1,3
-BRDA:25,209,0,1
-BRDA:25,209,1,2
-BRDA:29,379,0,1
-BRDA:29,379,1,1
+FNDA:0,System.Void vuttr_api.presentation.controllers.AuthenticationController/<Resigter>d__2::MoveNext()
+DA:22,0
+DA:23,0
+DA:25,0
+DA:27,0
+DA:29,0
+DA:30,0
+BRDA:23,50,0,0
+BRDA:23,50,1,0
+BRDA:25,209,0,0
+BRDA:25,209,1,0
+BRDA:29,379,0,0
+BRDA:29,379,1,0
 LF:15
-LH:15
+LH:0
 BRF:10
-BRH:10
+BRH:0
 FNF:3
-FNH:3
+FNH:0
 end_of_record
 SF:c:\Users\jonas\OneDrive\Desktop\Programming\C#\Projects\vuttr-api\src\vuttr-api.presentation\Controllers\ToolsController.cs
 FN:33,Microsoft.AspNetCore.Mvc.IActionResult vuttr_api.presentation.controllers.ToolsController::GetToolsByTag(System.String)
-FNDA:3,Microsoft.AspNetCore.Mvc.IActionResult vuttr_api.presentation.controllers.ToolsController::GetToolsByTag(System.String)
-DA:34,3
-DA:35,4
-DA:37,2
-DA:38,2
-DA:39,3
-BRDA:35,7,0,1
-BRDA:35,7,1,2
-BRDA:38,37,0,1
-BRDA:38,37,1,1
+FNDA:0,Microsoft.AspNetCore.Mvc.IActionResult vuttr_api.presentation.controllers.ToolsController::GetToolsByTag(System.String)
+DA:34,0
+DA:35,0
+DA:37,0
+DA:38,0
+DA:39,0
+BRDA:35,7,0,0
+BRDA:35,7,1,0
+BRDA:38,42,0,0
+BRDA:38,42,1,0
 FN:44,Microsoft.AspNetCore.Mvc.IActionResult vuttr_api.presentation.controllers.ToolsController::GetToolById(System.Int32)
-FNDA:3,Microsoft.AspNetCore.Mvc.IActionResult vuttr_api.presentation.controllers.ToolsController::GetToolById(System.Int32)
-DA:45,3
-DA:46,4
-DA:48,2
-DA:49,2
-DA:50,3
-BRDA:46,10,0,1
-BRDA:46,10,1,2
-BRDA:49,40,0,1
-BRDA:49,40,1,1
+FNDA:0,Microsoft.AspNetCore.Mvc.IActionResult vuttr_api.presentation.controllers.ToolsController::GetToolById(System.Int32)
+DA:45,0
+DA:46,0
+DA:48,0
+DA:49,0
+DA:50,0
+BRDA:46,10,0,0
+BRDA:46,10,1,0
+BRDA:49,40,0,0
+BRDA:49,40,1,0
 FN:14,System.Void vuttr_api.presentation.controllers.ToolsController::.ctor(vuttr_api.services.contracts.IToolService)
-FNDA:21,System.Void vuttr_api.presentation.controllers.ToolsController::.ctor(vuttr_api.services.contracts.IToolService)
-DA:15,21
-DA:16,21
-DA:17,21
-DA:18,21
+FNDA:0,System.Void vuttr_api.presentation.controllers.ToolsController::.ctor(vuttr_api.services.contracts.IToolService)
+DA:15,0
+DA:16,0
+DA:17,0
+DA:18,0
 FN:92,System.Void vuttr_api.presentation.controllers.ToolsController/<DeleteTool>d__7::MoveNext()
-FNDA:4,System.Void vuttr_api.presentation.controllers.ToolsController/<DeleteTool>d__7::MoveNext()
-DA:93,4
-DA:94,5
-DA:96,3
-DA:98,4
-DA:100,2
-DA:101,4
-BRDA:94,29,0,1
-BRDA:94,29,1,3
-BRDA:98,213,0,1
-BRDA:98,213,1,2
-BRDA:100,297,0,1
-BRDA:100,297,1,1
+FNDA:0,System.Void vuttr_api.presentation.controllers.ToolsController/<DeleteTool>d__7::MoveNext()
+DA:93,0
+DA:94,0
+DA:96,0
+DA:98,0
+DA:100,0
+DA:101,0
+BRDA:94,29,0,0
+BRDA:94,29,1,0
+BRDA:98,213,0,0
+BRDA:98,213,1,0
+BRDA:100,297,0,0
+BRDA:100,297,1,0
 FN:23,System.Void vuttr_api.presentation.controllers.ToolsController/<GetTools>d__2::MoveNext()
-FNDA:2,System.Void vuttr_api.presentation.controllers.ToolsController/<GetTools>d__2::MoveNext()
-DA:24,2
-DA:25,2
-DA:26,2
-DA:27,2
-BRDA:26,151,0,1
-BRDA:26,151,1,1
+FNDA:0,System.Void vuttr_api.presentation.controllers.ToolsController/<GetTools>d__2::MoveNext()
+DA:24,0
+DA:25,0
+DA:26,0
+DA:27,0
+BRDA:26,156,0,0
+BRDA:26,156,1,0
 FN:55,System.Void vuttr_api.presentation.controllers.ToolsController/<RegisterTool>d__5::MoveNext()
-FNDA:4,System.Void vuttr_api.presentation.controllers.ToolsController/<RegisterTool>d__5::MoveNext()
-DA:56,4
-DA:57,5
-DA:59,3
-DA:61,4
-DA:63,2
-DA:65,2
-DA:66,2
-DA:67,2
-DA:68,4
-BRDA:57,39,0,1
-BRDA:57,39,1,3
-BRDA:61,113,0,1
-BRDA:61,113,1,2
-BRDA:65,283,0,1
-BRDA:65,283,1,1
+FNDA:0,System.Void vuttr_api.presentation.controllers.ToolsController/<RegisterTool>d__5::MoveNext()
+DA:56,0
+DA:57,0
+DA:59,0
+DA:61,0
+DA:63,0
+DA:65,0
+DA:66,0
+DA:67,0
+DA:68,0
+BRDA:57,39,0,0
+BRDA:57,39,1,0
+BRDA:61,113,0,0
+BRDA:61,113,1,0
+BRDA:65,283,0,0
+BRDA:65,283,1,0
 FN:74,System.Void vuttr_api.presentation.controllers.ToolsController/<UpdateTool>d__6::MoveNext()
-FNDA:5,System.Void vuttr_api.presentation.controllers.ToolsController/<UpdateTool>d__6::MoveNext()
-DA:75,5
-DA:76,6
-DA:78,5
-DA:80,3
-DA:82,4
-DA:84,2
-DA:85,2
-DA:86,5
-BRDA:76,32,0,1
-BRDA:76,32,1,4
-BRDA:78,77,0,1
-BRDA:78,77,1,3
-BRDA:82,148,0,1
-BRDA:82,148,1,2
-BRDA:85,376,0,1
-BRDA:85,376,1,1
+FNDA:0,System.Void vuttr_api.presentation.controllers.ToolsController/<UpdateTool>d__6::MoveNext()
+DA:75,0
+DA:76,0
+DA:78,0
+DA:80,0
+DA:82,0
+DA:84,0
+DA:85,0
+DA:86,0
+BRDA:76,32,0,0
+BRDA:76,32,1,0
+BRDA:78,77,0,0
+BRDA:78,77,1,0
+BRDA:82,148,0,0
+BRDA:82,148,1,0
+BRDA:85,376,0,0
+BRDA:85,376,1,0
 LF:41
-LH:41
+LH:0
 BRF:30
-BRH:30
+BRH:0
 FNF:7
-FNH:7
+FNH:0
 end_of_record
 SF:c:\Users\jonas\OneDrive\Desktop\Programming\C#\Projects\vuttr-api\src\vuttr-api.services\implementations\AuthService.cs
 FN:32,System.String vuttr_api.services.AuthService::Combine(System.String,System.String)
@@ -695,23 +1686,23 @@ DA:41,0
 DA:42,0
 BRDA:41,15,0,0
 BRDA:41,15,1,0
-FN:58,System.Collections.Generic.IEnumerable`1<vuttr_api.domain.dtos.ToolViewModel> vuttr_api.services.ToolService::GetToolsByTag(System.String)
+FN:59,System.Collections.Generic.IEnumerable`1<vuttr_api.domain.dtos.ToolViewModel> vuttr_api.services.ToolService::GetToolsByTag(System.String)
 FNDA:0,System.Collections.Generic.IEnumerable`1<vuttr_api.domain.dtos.ToolViewModel> vuttr_api.services.ToolService::GetToolsByTag(System.String)
-DA:59,0
 DA:60,0
 DA:61,0
 DA:62,0
 DA:64,0
-DA:65,0
 DA:66,0
 DA:67,0
 DA:68,0
 DA:69,0
 DA:70,0
-BRDA:62,26,0,0
-BRDA:62,26,1,0
-BRDA:64,85,1,0
-BRDA:64,85,0,0
+DA:71,0
+DA:72,0
+BRDA:64,26,0,0
+BRDA:64,26,1,0
+BRDA:66,85,1,0
+BRDA:66,85,0,0
 FN:13,System.Void vuttr_api.services.ToolService::.ctor(vuttr_api.persistence.contracts.IToolRepository,AutoMapper.IMapper)
 FNDA:0,System.Void vuttr_api.services.ToolService::.ctor(vuttr_api.persistence.contracts.IToolRepository,AutoMapper.IMapper)
 DA:14,0
@@ -738,28 +1729,28 @@ FNDA:0,System.Void vuttr_api.services.ToolService/<GetToolsAsync>d__7::MoveNext(
 DA:45,0
 DA:46,0
 DA:47,0
-DA:48,0
-DA:50,0
+DA:49,0
 DA:51,0
 DA:52,0
 DA:53,0
 DA:54,0
 DA:55,0
 DA:56,0
-BRDA:48,169,0,0
-BRDA:48,169,1,0
-BRDA:50,288,1,0
-BRDA:50,288,0,0
-FN:72,System.Void vuttr_api.services.ToolService/<UpdateToolAsync>d__9::MoveNext()
+DA:57,0
+BRDA:49,169,0,0
+BRDA:49,169,1,0
+BRDA:51,288,1,0
+BRDA:51,288,0,0
+FN:74,System.Void vuttr_api.services.ToolService/<UpdateToolAsync>d__9::MoveNext()
 FNDA:0,System.Void vuttr_api.services.ToolService/<UpdateToolAsync>d__9::MoveNext()
-DA:73,0
-DA:74,0
 DA:75,0
 DA:76,0
 DA:77,0
 DA:78,0
-BRDA:77,203,0,0
-BRDA:77,203,1,0
+DA:79,0
+DA:80,0
+BRDA:79,203,0,0
+BRDA:79,203,1,0
 LF:49
 LH:0
 BRF:16
