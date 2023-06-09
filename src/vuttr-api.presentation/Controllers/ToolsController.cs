@@ -23,7 +23,7 @@ public class ToolsController : ControllerBase
     public async Task<IActionResult> GetTools()
     {
         IEnumerable<ToolViewModel>? tools = await _toolService.GetToolsAsync();
-        return tools is null ? NotFound("No tools available.") : Ok(tools);
+        return tools == Array.Empty<ToolViewModel>() ? NotFound("No tools available.") : Ok(tools);
     }
 
     [HttpGet("search")] // api/tools/search?tag=json
@@ -35,10 +35,10 @@ public class ToolsController : ControllerBase
         if (tag is null) return BadRequest("Invalid tag.");
 
         IEnumerable<ToolViewModel>? tools = _toolService.GetToolsByTag(tag);
-        return tools is null ? NotFound($"There is no tool with the tag '{tag}'.") : Ok(tools);
+        return tools == Array.Empty<ToolViewModel>() ? NotFound($"There is no tool with the tag '{tag}'.") : Ok(tools);
     }
 
-    [HttpGet("{id}")] // api/tools/1
+    [HttpGet("{id}", Name = "GetToolById")] // api/tools/1
     [ProducesResponseType(200)]
     [ProducesResponseType(404)]
     public IActionResult GetToolById(int id)
@@ -64,7 +64,7 @@ public class ToolsController : ControllerBase
 
         return added is null
             ? BadRequest("Repository failed to create tool.")
-            : CreatedAtAction("GetToolById", added.Id, added);
+            : CreatedAtAction(nameof(GetToolById), new { id = added.Id }, added);
     }
 
     [HttpPut("edit/{id}")] // api/tools/edit/1

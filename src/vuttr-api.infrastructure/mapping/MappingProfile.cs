@@ -15,5 +15,6 @@ public class MappingProfile : Profile
         CreateMap<UpdateToolRequest, Tool>()
             .ForMember(tool => tool.Tags, opt => opt.MapFrom<UpdateTagResolver>());
         CreateMap<UserForRegistration, ApplicationUser>();
+        CreateMap<ApplicationUser, UserViewModel>();
     }
 }

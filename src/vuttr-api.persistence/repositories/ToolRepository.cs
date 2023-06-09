@@ -19,15 +19,17 @@ public class ToolRepository : IToolRepository
     public async Task<Tool?> CreateAsync(Tool tool)
     {
         EntityEntry<Tool> added = await _tools.AddAsync(tool);
-        return await _context.SaveChangesAsync() is 1 ? added.Entity : null;
+        return await _context.SaveChangesAsync() > 0 ? added.Entity : null;
     }
 
     public async Task<bool?> DeleteAsync(int id)
     {
         Tool? existing = await _tools.FindAsync(id);
+
         if (existing is null) return null;
         _tools.Remove(existing);
-        return await _context.SaveChangesAsync() is 1;
+
+        return await _context.SaveChangesAsync() > 0;
     }
 
     public async Task<IEnumerable<Tool>?> RetrieveAllAsync()
@@ -42,7 +44,9 @@ public class ToolRepository : IToolRepository
 
     public IEnumerable<Tool>? RetrieveByTag(string tag)
     {
-        return _tools.Include(x => x.Tags).AsNoTracking().Where(x => x.Tags!.Select(x => x.Name).ToList().Contains(tag));
+        return _tools.Include(x => x.Tags)
+                     .AsNoTracking()
+                     .Where(x => x.Tags!.Contains(new() { Name = tag }));
     }
 
     public Tool? RetrieveByTitle(string title)
@@ -53,6 +57,6 @@ public class ToolRepository : IToolRepository
     public async Task<Tool?> UpdateAsync(Tool tool)
     {
         EntityEntry<Tool> updated = _tools.Update(tool);
-        return await _context.SaveChangesAsync() is 1 ? updated.Entity : null;
+        return await _context.SaveChangesAsync() > 0 ? updated.Entity : null;
     }
 }

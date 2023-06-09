@@ -45,6 +45,7 @@ public class ToolService : IToolService
     {
         List<ToolViewModel> output = new();
         IEnumerable<Tool>? tools = await _repository.RetrieveAllAsync();
+
         if (tools is null) return null;
 
         foreach (Tool tool in tools)
@@ -59,6 +60,7 @@ public class ToolService : IToolService
     {
         List<ToolViewModel> output = new();
         IEnumerable<Tool>? tools = _repository.RetrieveByTag(tag);
+
         if (tools is null) return null;
 
         foreach (Tool tool in tools)

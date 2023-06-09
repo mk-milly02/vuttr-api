@@ -8,6 +8,5 @@ public class UserForAuthentication
     public string? Username { get; set; }
 
     [Required(ErrorMessage = "Password is required")]
-    [MinLength(6, ErrorMessage = "A paasword must have at least 6 characters")]
     public string? Password { get; set; }
 }
