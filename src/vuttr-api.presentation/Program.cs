@@ -15,7 +15,21 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(s =>
 {
-    s.SwaggerDoc("v1", new OpenApiInfo { Title = "vuttr-api", Version = "v1" });
+    s.SwaggerDoc("v1", new OpenApiInfo
+    {
+        Title = "vuttr-api",
+        Version = "v1",
+        Description = "An API for the VUTTR (Very Useful Tools to Remember) application which manages tools. ",
+        Contact = new OpenApiContact
+        {
+            Name = "Jonas Ababio",
+            Url = new Uri("https://www.twitter.com/mkmilly02")
+        },
+        License = new OpenApiLicense
+        {
+            Name = "MIT",
+        },
+    });
     s.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
     {
         In = ParameterLocation.Header,
