@@ -21,7 +21,7 @@ The API uses the following libraries and frameworks to deliver the functionaliti
 
 I added Swagger UI to the API, so we can use it to visualize and test all API routes. You can run the application and navigate to `/swagger` to see the API documentation:
 
-![image](docs\overview.png)
+![image](docs/overview.png)
 
 Clone this repository and open it in a terminal.
 
